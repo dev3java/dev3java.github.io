@@ -5,7 +5,7 @@
 
 - type: my-first-site
   icon: 'fa-brands fa-java'
-  url:  'http://dev3java.bplaced.net/'
+  url:  'https://dev3java.bplaced.net/'
 
 - type: stack-overflow
   icon: 'fab fa-stack-overflow'
