@@ -14,12 +14,12 @@ timezone: Europe/Moscow
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: dev3java # the main title
+title: "@dev3java" # the main title
 
-tagline: База статей по Android и Kotlin. # it will display as the subtitle
+tagline: База статей Android/Kotlin # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  База статей по Android и Kotlin, основанная на личных наблюдениях,
+  База статей Android/Kotlin, основанная на личных наблюдениях,
   а так же интересные статьи и информация со сторонних ресурсов.
 
 # Fill in the protocol & hostname for your site.
@@ -99,7 +99,7 @@ theme_mode: # [light | dark]
 cdn: "" #https://chirpy-img.netlify.app
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "" #/commons/avatar.jpg
+avatar: "/assets/img/favicons/avatar.gif" #/commons/avatar.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -151,7 +151,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "" #https://dev3java.github.io
+baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 
