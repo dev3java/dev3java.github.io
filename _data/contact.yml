@@ -3,26 +3,40 @@
 - type: github
   icon: "fab fa-github"
 
-- type: telegram
-  icon: "fab fa-telegram"
-  link: "https://t.me/share/url?url=URL&text=TITLE"
+- type: my-first-site
+  icon: 'fa-brands fa-java'
+  url:  'http://dev3java.bplaced.net/'
 
 - type: stack-overflow
   icon: 'fab fa-stack-overflow'
-  url:  'https://stackexchange.com/users/8955212'                  # Fill with your stackoverflow homepage
+  url:  'https://stackexchange.com/users/8955212'
+
+- type: google-play
+  icon: 'fa-brands fa-google-play'
+  url:  'https://play.google.com/store/search?q=dev3java'
+
+- type: youtube
+  icon: 'fa-brands fa-youtube'
+  url: "https://www.youtube.com/channel/UCUis7fy4jkUBgUBK-5sbFbg"
+
+- type: hh
+  icon: 'fa-solid fa-file-word'
+  url: https://hh.ru/applicant/resumes/view?resume=ad55d6b0ff039f874f0039ed1f574851546a68
+
+- type: telegram
+  icon: 'fa-brands fa-telegram'
+  url: "https://t.me/dev3java"
 
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-#- type: HeadHunter
-#  icon: "fab fa-hh"
-#  link: "https://hh.ru/share/url?url=URL&text=TITLE"
 
-#- type: rss
-#  icon: "fas fa-rss"
-#  noblank: true
 # Uncomment and complete the url below to enable more contact options
+#
+# - type: rss
+#   icon: "fas fa-rss"
+#   noblank: true
 #
 # - type: mastodon
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
@@ -44,5 +58,5 @@
 #   icon: 'fa-brands fa-threads'
 #   url: ''                   # Fill with your Threads profile link
 #
-#- type: twitter
-#  icon: "fa-brands fa-x-twitter"
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
