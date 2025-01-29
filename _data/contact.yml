@@ -9,7 +9,7 @@
 
 - type: stack-overflow
   icon: 'fab fa-stack-overflow'
-  url:  'http://stackexchange.com/users/8955212'                  # Fill with your stackoverflow homepage
+  url:  'https://stackexchange.com/users/8955212'                  # Fill with your stackoverflow homepage
 
 - type: email
   icon: "fas fa-envelope"
