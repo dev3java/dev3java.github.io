@@ -32,6 +32,9 @@ github:
 twitter:
   username: twitter_username # change to your Twitter username
 
+#https://github.com/barryclark/jekyll-now/issues/538 - add telegram
+# https://github.com/dev3java/chirpy-static-assets
+
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
