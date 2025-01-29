@@ -41,17 +41,17 @@ toc: false
     - [Activity, Lifecycle](https://dev3java.github.io/posts/android-activity)
     - [Tasks and Backstack](https://dev3java.github.io/posts/tasks-and-back-stack)
     - [Broadcast Receiver](https://dev3java.github.io/posts/broadcasts/)
-    - [Service]()
-    - [Intent]()
+    - [Service]
+    - [Intent]
 - User Interface
-    - [Fragments]()
-    - Data Views
+    - [Fragments]
+    - [Data Views]
       - [RecyclerView](https://dev3java.github.io/posts/recycler-view/)
     - ...
 - Storage
     - ...
 - Architecture
-    - [Linters]()
-    - [Dependency Injection]()
-    - [Архитектурные паттерны]()
+    - [Linters]
+    - [Dependency Injection]
+    - [Архитектурные паттерны]
 - ...
