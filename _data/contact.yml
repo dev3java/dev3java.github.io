@@ -19,6 +19,10 @@
   icon: 'fa-brands fa-youtube'
   url: "https://www.youtube.com/channel/UCUis7fy4jkUBgUBK-5sbFbg"
 
+- type: my-certifications
+  icon: 'fa-solid fa-certificate'
+  url: "https://drive.google.com/open?id=1hh3n2705AdrCBjUzcIJ9SJANmewVzS_O"
+
 - type: hh
   icon: 'fa-solid fa-file-word'
   url: https://hh.ru/applicant/resumes/view?resume=ad55d6b0ff039f874f0039ed1f574851546a68
