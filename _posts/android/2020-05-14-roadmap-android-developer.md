@@ -35,7 +35,7 @@ toc: false
 ## Содержание (теория)
 
 - [Язык программирования - Kotlin](https://dev3java.github.io/posts/kotlin-overview/)
-- [Архитектура платформы Android](http://dev3java.github.io/posts/how-does-android-work/)
+- [Архитектура платформы Android](https://dev3java.github.io/posts/how-does-android-work/)
 - [Манифест приложения](https://dev3java.github.io/posts/manifest-file/)
 - Компоненты приложения
     - [Activity, Lifecycle](https://dev3java.github.io/posts/android-activity)

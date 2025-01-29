@@ -125,7 +125,7 @@ Apple анонсировала свой первый iPhone и iOS, в Пало-
 <!-- Ссылки по тексту -->
 [1-pcworld-camera-os]: https://www.pcworld.com/article/2034723/android-founder-we-aimed-to-make-a-camera-os.html "pcworld.com"
 [2-open-handset-alliance-wiki]: https://ru.wikipedia.org/wiki/Open_Handset_Alliance "wikipedia.org"
-[3-open-handset-alliance-official]: http://www.openhandsetalliance.com/index.html "openhandsetalliance.com"
+[3-open-handset-alliance-official]: https://www.openhandsetalliance.com/index.html "openhandsetalliance.com"
 [4-nytimes-android-logo]: https://www.nytimes.com/2013/10/13/magazine/who-made-that-android-logo.html "nytimes.com"
 [5-android-lawn-statues-wiki]: https://en.wikipedia.org/wiki/Android_lawn_statues "wikipedia.org"
 [6-blog-evolving-android-brand]: https://www.blog.google/products/android/evolving-android-brand/ "blog.google"

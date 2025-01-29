@@ -600,5 +600,5 @@ val person = Person("Joe ")
 
 [Официальная документация](https://kotlinlang.org/docs/reference/basic-syntax.html "kotlinlang.org"). <br>
 [Неофициальный русский перевод документации](https://kotlinlang.ru/docs/reference/basic-syntax.html "kotlinlang.ru"). <br>
-[Статьи от А.Климова про Kotlin](http://developer.alexanderklimov.ru/android/kotlin/ "developer.alexanderklimov.ru"). <br>
+[Статьи от А.Климова про Kotlin](https://developer.alexanderklimov.ru/android/kotlin/ "developer.alexanderklimov.ru"). <br>
 [Рекомендации Google по началу работы с Kotlin](https://developer.android.com/kotlin/get-started "developer.android.com").

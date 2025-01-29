@@ -384,8 +384,8 @@ Marble диаграммы - визуально передают то, что п�
 
 
 
-[reactivex]: http://reactivex.io/
-[operators]: http://reactivex.io/documentation/operators.html
+[reactivex]: https://reactivex.io/
+[operators]: https://reactivex.io/documentation/operators.html
 [your-own-operators]: https://github.com/ReactiveX/RxJava/wiki/Implementing-Your-Own-Operators
 [rxjava-github]: https://github.com/ReactiveX/RxJava
 [backpressure-github]: https://github.com/ReactiveX/RxJava/wiki/Backpressure-(2.0)

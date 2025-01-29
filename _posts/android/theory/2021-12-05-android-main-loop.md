@@ -1654,14 +1654,14 @@ class GameLooper {
 [post-flutter-event-loop-ru]: https://habr.com/ru/post/497278/ "habr.com"
 [post-flutter-rendering]: https://www.alibabacloud.com/blog/exploration-of-the-flutter-rendering-mechanism-from-architecture-to-source-code_597285 "alibabacloud.com"
 [post-fix-delta-time]: https://gafferongames.com/post/fix_your_timestep/ "gafferongames.com"
-[post-game-loop-1]: http://gameprogrammingpatterns.com/game-loop.html "gameprogrammingpatterns.com"
+[post-game-loop-1]: https://gameprogrammingpatterns.com/game-loop.html "gameprogrammingpatterns.com"
 [post-game-loop-2]: https://dewitters.com/dewitters-gameloop/ "dewitters.com"
 [post-smooth-motion-in-unity]: https://www.kinematicsoup.com/news/2016/8/9/rrypp5tkubynjwxhxjzd42s3o034o8 "kinematicsoup.com"
 [chrome-main-loop]: https://habr.com/ru/post/461401/ "habr.com"
 
 [c++-condition-variable]: https://en.cppreference.com/w/cpp/thread/condition_variable "en.cppreference.com"
 [epoll]: https://man7.org/linux/man-pages/man7/epoll.7.html "man7.org"
-[epoll-2]: http://www.xmailserver.org/linux-patches/nio-improve.html "xmailserver.org"
+[epoll-2]: https://www.xmailserver.org/linux-patches/nio-improve.html "xmailserver.org"
 [eventfd]: https://man7.org/linux/man-pages/man2/eventfd.2.html "man7.org"
 [write]: https://man7.org/linux/man-pages/man2/write.2.html "man7.org"
 
