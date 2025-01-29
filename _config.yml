@@ -151,7 +151,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "https://dev3java.github.io"
+baseurl: "" #https://dev3java.github.io
 
 # ------------ The following options are not recommended to be modified ------------------
 
