@@ -251,7 +251,7 @@ fun main() {
 <!-- Ссылки -->
 [awesome-kotlin]: https://kotlin.link/ "kotlin.link"
 [dev3java-data-classes]: https://dev3java.github.io/posts/kotlin-data-classes/ "dev3java.github.io"
-[dev3java-default-args]: https://dev3java.github.io/posts/kotlin-constructors-and-init-block/#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80-primary-constructor "dev3java.github.io"
+[dev3java-default-args]: https://dev3java.github.io/posts/kotlin-constructors-and-init-block/#основной-конструктор-primary-constructor "dev3java.github.io"
 [dev3java-null-safety]: https://dev3java.github.io/posts/kotlin-null-safety/ "dev3java.github.io"
 [github-jackson]: https://github.com/FasterXML/jackson "github.com"
 [github-moshi]: https://github.com/square/moshi "github.com"
