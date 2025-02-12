@@ -2,12 +2,13 @@
 author: dev3java
 categories:
 - Markdown
-- Template
+- Tutorial
 date: "2020-05-14T16:20:00Z"
+pin: false
 tags:
-- template
-- typography
-- markdown
+  - markdown
+  - tutorial
+  - typography
 title: Шаблон статьи, синтаксис Markdown
 ---
 
