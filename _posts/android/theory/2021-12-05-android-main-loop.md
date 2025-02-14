@@ -8,7 +8,6 @@ tags:
 - android
 - theory
 - main loop
-- главный цикл
 title: Main Loop (Главный цикл) в Android
 ---
 
