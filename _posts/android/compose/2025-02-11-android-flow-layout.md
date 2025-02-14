@@ -36,7 +36,7 @@ fun FlowRow{
 
 ```
 
-FlowColumn может выглядеть следующим образом:
+`FlowColumn` может выглядеть следующим образом:
 
 ![example-2](/assets/img/posts/android-compose/flow-layout/flowLayout-example-2.png)
 
