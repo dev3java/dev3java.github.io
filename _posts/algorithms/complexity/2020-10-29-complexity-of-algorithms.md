@@ -11,6 +11,7 @@ tags:
 title: Сложность алгоритмов. Big O. Основы.
 image:
   path: /assets/img/posts/algorithms/algorithm.webp
+  lqip: data:image/webp;
 ---
 
 **Сложность алгоритма** - это количественная характеристика, которая говорит о том, сколько времени, 

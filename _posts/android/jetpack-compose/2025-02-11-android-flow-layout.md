@@ -7,6 +7,7 @@ tags: [android, jetpack compose]
 pin: false
 image:
   path: /assets/img/posts/android/jetpack-compose/flow-layout/flowLayout-example-cover.png
+  lqip: data:image/webp;
 ---
 
 `FlowRow` и `FlowColumn` очень просты в использовании — они являются мощным и гибким инструментом

@@ -11,6 +11,7 @@ tags:
 title: Алгоритмы кэширования
 image:
   path: /assets/img/posts/algorithms/algorithm.webp
+  lqip: data:image/webp;
 ---
 
 Кэш - это временное хранилище для данных, которые с наибольшей вероятностью могут быть повторно запрошены. 

@@ -11,6 +11,7 @@ tags:
 title: Алгоритмы сортировки
 image:
   path: /assets/img/posts/algorithms/algorithm.webp
+  lqip: data:image/webp;
 ---
 
 Алгоритм сортировки — это алгоритм для упорядочивания элементов в списке.

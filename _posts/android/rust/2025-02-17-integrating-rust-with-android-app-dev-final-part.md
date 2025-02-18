@@ -7,6 +7,7 @@ tags: [android, jetpack compose, rust, kotlin, java]
 pin: false
 image:
   path: /assets/img/posts/android/rust/rust-android-scaled.webp
+  lqip: data:image/webp;
 ---
 
 Это вторая и заключительная часть серии, в которой объясняется, 

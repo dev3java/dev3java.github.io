@@ -11,6 +11,7 @@ tags:
 title: Navigation Drawer
 image:
   path: /assets/img/posts/android/navigation-drawer/navigation-drawer-open.png
+  lqip: data:image/webp;
 ---
 
 Navigation drawer - это главное меню приложения, которое выдвигается слева направо
