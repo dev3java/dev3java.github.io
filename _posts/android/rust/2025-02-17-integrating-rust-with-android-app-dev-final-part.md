@@ -3,7 +3,7 @@ title: Интегрируем Rust в Android-приложение (Финаль
 author: dev3java
 date: 2025-02-17 17:00:00 +0300
 categories: [Android, Rust]
-tags: [android, compose, rust, kotlin, java]
+tags: [android, jetpack compose, rust, kotlin, java]
 pin: false
 image:
   path: /assets/img/posts/android-rust/rust-android-scaled.webp
