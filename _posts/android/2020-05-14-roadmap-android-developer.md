@@ -23,7 +23,7 @@ toc: false
 
 Теперь, когда встает вопрос "а что же дальше изучить?", подглядываю туда.
 
-Посмотреть на карту можно [здесь](/assets/img/posts/roadmap-android-developer/android_roadmap.png). Либо на [GitHub'е](https://github.com/mobile-roadmap/android-developer-roadmap).
+Посмотреть на карту можно [здесь](/assets/img/posts/android/roadmap-android-developer/android_roadmap.png). Либо на [GitHub'е](https://github.com/mobile-roadmap/android-developer-roadmap).
 
 А это второй вариант карты на [GitHub'е](https://github.com/MindorksOpenSource/android-developer-roadmap).
 
