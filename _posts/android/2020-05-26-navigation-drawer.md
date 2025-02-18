@@ -9,17 +9,17 @@ tags:
 - ui
 - navigation
 title: Navigation Drawer
+image:
+  path: /assets/img/posts/android/navigation-drawer/navigation-drawer-open.png
 ---
 
 Navigation drawer - это главное меню приложения, которое выдвигается слева направо
 при нажатии пользователем на значок "гамбургера". Либо свайпом слева направо.
-Его еще называют "шторкой" и в открытом виде выглядит так:
-
-![navigation drawer open](/assets/img/posts/navigation-drawer/navigation-drawer-open.png)
 
 Когда этот элемент интерфейса только только появился, необходимо было
 осуществлять много манипуляций по его добавлению на экран (если не учитывать
-наличие специального шаблона). Ради интереса можно ознакомиться со [статьей](https://developer.alexanderklimov.ru/android/navigation_drawer_activity.php "developer.alexanderklimov.ru"), в которой описывается весь этот нелегкий путь.
+наличие специального шаблона). Ради интереса можно ознакомиться со [статьей](https://developer.alexanderklimov.ru/android/navigation_drawer_activity.php "developer.alexanderklimov.ru"), 
+в которой описывается весь этот нелегкий путь.
 
 Но вот на Google I/O 2018 была предложена совершенно новая концепция навигации
 по приложению, для которой уже весной 2019 года выпустили стабильную версию.
@@ -40,7 +40,7 @@ Navigation drawer - это главное меню приложения, кот�
 
 ### Зависимости
 
-```
+```groovy
 // Java language implementation
   implementation "androidx.navigation:navigation-fragment:$nav_version"
   implementation "androidx.navigation:navigation-ui:$nav_version"
@@ -52,7 +52,7 @@ Navigation drawer - это главное меню приложения, кот�
 
 В этом же файле `build.gradle` должно быть:
 
-```
+```groovy
 android {
   ...
 
@@ -63,7 +63,7 @@ android {
 ```
 
 Иначе словите ошибку:
-![jvm-error](/assets/img/posts/navigation-drawer/error-jvm.jpg)
+![jvm-error](/assets/img/posts/android/navigation-drawer/error-jvm.jpg)
 
 ### Фрагменты
 Так как основная цель **Jetpack Navigation** - создание приложений по типу
@@ -76,7 +76,7 @@ android {
 
 **Макет для MainFragment, SettingsFragment, AboutFragment - `fragment_page.xml`**
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -93,7 +93,8 @@ android {
 
 **Код для класса MainFragment**  
 Для остальных фрагментов код идентичен, разница только в отображаемом тексте.
-```
+
+```kotlin
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -125,7 +126,7 @@ class MainFragment : Fragment() {
 Добавляем новую директорию в ресурсы через контекстное меню **New ->
 Android Resource Directory**. В новом окне полю **Resource type** задать
 значение **navigation**:
-![navigation directory](/assets/img/posts/navigation-drawer/navigation_directory.jpg)
+![navigation directory](/assets/img/posts/android/navigation-drawer/navigation_directory.jpg)
 
 В созданной папке добавляем новый файл `nav_graph.xml`.
 
@@ -137,11 +138,11 @@ Android Resource Directory**. В новом окне полю **Resource type** 
 правого края. С помощью него выстраивается цепочка переходов от фрагмента к
 фрагменту.
 
-![create new action](/assets/img/posts/navigation-drawer/navigation_graph_actions.jpg)
+![create new action](/assets/img/posts/android/navigation-drawer/navigation_graph_actions.jpg)
 
 В результате в `nav_graph.xml` должен получится такой код:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <navigation
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -179,7 +180,7 @@ Android Resource Directory**. В новом окне полю **Resource type** 
 По аналогии с навигацией, нужно добавить папку в ресурсы для меню и файл
 `nav_drawer_menu.xml`:
 
-```
+```xml
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
@@ -199,7 +200,7 @@ Android Resource Directory**. В новом окне полю **Resource type** 
 Создается в папке layouts, дизайн на ваше усмотрение. Вот, что получилось у меня
 (`nav_header.xml`):
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -225,7 +226,7 @@ Android Resource Directory**. В новом окне полю **Resource type** 
 объявляется основное содержимое экрана: toolbar, контейнер для фрагментов и сама
 шторка - NavigationView.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -286,13 +287,13 @@ Android Resource Directory**. В новом окне полю **Resource type** 
 стандартный `actionBar`. Для этого заходим в `values/styles.xml` и меняем
 `DarkActionBar` на `NoActionBar`. Должно получится так:
 
-```
+```xml
 <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
 ```
 
 ### Подключение в классе MainActivity
 
-```
+```kotlin
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -333,7 +334,7 @@ class MainActivity : AppCompatActivity() {
 графа в качестве первого параметра можно указать список фрагментов, у которых
 **не будет** происходить смена иконки "гамбургера" на стрелку **UP**:
 
-```
+```kotlin
 appBarConfig = AppBarConfiguration(setOf(R.id.main_fragment), drawer_layout)
 ```
 
@@ -345,7 +346,7 @@ appBarConfig = AppBarConfiguration(setOf(R.id.main_fragment), drawer_layout)
 
 Добавляем в `values/styles.xml` следующий код:
 
-```
+```xml
 <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
     <!-- Customize your theme here. -->
     <item name="colorPrimary">@color/colorPrimary</item>
