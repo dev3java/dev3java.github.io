@@ -207,7 +207,7 @@ pub use crate::java_glue::*;
 
 Чтобы скомпилировать Rust для Android, нам нужно добавить инструменты Android в `rustup`. Для этого просто запустите в Терминале следующее:
 
-```shell
+```terminal
 >rustup default nightly 
 >rustup target add aarch64-linux-android armv7-linux-androideabi
 ```

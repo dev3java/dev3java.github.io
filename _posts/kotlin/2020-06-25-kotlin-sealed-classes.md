@@ -21,7 +21,7 @@ title: Kotlin. Изолированные (запечатанные) класс�
 
 Для определения изолированного класса используется ключевое слово `sealed`.
 
-```
+```kotlin
 sealed class MessageType {
   class Success(var msg: String) : MessageType()
   class Failure(var msg: String, var e: Exception) : MessageType()
@@ -36,7 +36,7 @@ sealed class MessageType {
 
 Изолированный класс можно использовать совместно с условным выражением `when`, при этом указывать ветку `else` не требуется.
 
-```
+```kotlin
 val msgSuccess = Success("Ура!")
 val msgFailure = Failure("Ну вот...", Exсeption("Что-то пошло не так."))
 var messageType: MessageType = msgFailure

@@ -38,7 +38,7 @@ title: Kotlin. Модификатор const
 
 Разберем на примере.
 
-```
+```kotlin
 class SomeClass {
     companion object {    
         const val FILE_EXTENSION = ".jpg"    
@@ -68,7 +68,7 @@ class SomeClass {
 
 Если декомпилировать приведенный выше код, то получим следующее:
 
-```
+```java
 public final String getFILENAME() {
    return "Img_" + System.currentTimeMillis() + ".png";
 }
@@ -82,13 +82,15 @@ public final String getFILENAME() {
 
 На самом деле оба эти подхода приемлемы. Однако, использование `companion object` может быть излишним: компилятор Kotlin преобразует `companion object` во вложенный класс. Слишком много кода для простой константы.
 
-```
+```kotlin
 // исходный код Kotlin
 class SomeClass {
     companion object {    
         const val FILE_EXTENSION = ".jpg"    
 }
+```
 
+```java
 // эквивалент на Java
 public final class SomeClass {
    @NotNull
@@ -108,10 +110,12 @@ public final class SomeClass {
 
 Объявление константы вне класса приведёт к гораздо менее раздутому результату.
 
-```
+```kotlin
 // исходный код Kotlin
 const val FILE_EXTENSION = ".jpg"
+```
 
+```java
 // эквивалент на Java
 public final class SomeClass {
    @NotNull
@@ -123,14 +127,16 @@ public final class SomeClass {
 
 Если вы хотите сгруппировать несколько констант в одном месте, то используйте для этого объекты:
 
-```
+```kotlin
 // исходный код Kotlin
 object Tree {
     const val pine = "Pine"
     const val apple  = "Apple tree"
     const val birch = "Birch tree"
 }
+```
 
+```java
 // эквивалент на Java
 public final class Tree {
    @NotNull

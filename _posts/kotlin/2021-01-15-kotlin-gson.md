@@ -25,7 +25,7 @@ Gson - это очень популярная библиотека для сер
 
 В результате у нас получится примерно такой класс:
 
-```
+```kotlin
 data class Tree (
   val name: String,
   val description: String,
@@ -49,7 +49,7 @@ data class Tree (
 
 Самый простой вариант - это сделать все свойства **nullable**, т.е. с поддержкой null-значений.
 
-```
+```kotlin
 data class Tree (
   val name: String?,
   val description: String?,
@@ -67,7 +67,7 @@ data class Tree (
 
 Свойства, значения которых могут быть `null`, объявляем приватными. Таким вспомогательным свойствам принято добавлять нижнее подчёркивание перед именем.
 
-```
+```kotlin
 data class Tree (
   @SerializedName("name") private val _name: String?,
   @SerializedName("description") private val _description: String?,
@@ -77,7 +77,7 @@ data class Tree (
 
 В теле класса объявляем свойства для чтения (с геттером). В геттере будет происходить проверка поступившего во вспомогательное свойство значения на `null`. И если значение равно `null`, то вместо `null` должно быть установлено значение по умолчанию.
 
-```
+```kotlin
 data class Tree (
   @SerializedName("name") private val _name: String?,
   @SerializedName("description") private val _description: String?,
@@ -96,7 +96,7 @@ data class Tree (
 
 Можно проверить все необходимые свойства на `null`, вызвав их в блоке `init`. В этом случае мы будем получать исключение каждый раз, когда значение одного из свойств равно `null`.
 
-```
+```kotlin
 data class Tree (
   @SerializedName("name") private val _name: String?,
   @SerializedName("description") private val _description: String?
@@ -121,7 +121,7 @@ data class Tree (
 
 Если всем свойствам в классе присвоить значения по умолчанию, то Gson будет использовать их, когда соответствующее поле в объекте JSON отсутствует.
 
-```
+```kotlin
 data class Tree (
   val name: String = "",
   val description: String = "",
@@ -133,7 +133,7 @@ data class Tree (
 
 Но есть одна оговорка. Это работает только когда поле **отсутствует** в объекте JSON. Если же оно есть и его значение равно `null`, тогда этот вариант не сработает. Gson десериализует нулевое значение даже в ненулевой тип без каких-либо ошибок. Но в дальнейшем это может привести к `TypeCastException`.
 
-```
+```kotlin
 // поле "color" отсутствует, будет использовано значение по умолчанию
 {
   "name": "Сосна",
@@ -156,7 +156,7 @@ data class Tree (
 
 Например, можно создать адаптер, который будет выбрасывать специальное исключение при обнаружении значения равного `null` во время десериализации.
 
-```
+```kotlin
 import com.google.gson.*
 import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonReader
@@ -201,7 +201,7 @@ class NullableTypAdapterFactory : TypeAdapterFactory {
 
 Пример использования адаптера:
 
-```
+```kotlin
 data class Tree (val name: String, val description: String)
 
 ---

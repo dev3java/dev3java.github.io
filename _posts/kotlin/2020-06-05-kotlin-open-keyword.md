@@ -20,7 +20,7 @@ title: Kotlin. Ключевое слово open. Наследование
 Чтобы этого избежать, нужно сделать класс наследуемым. В этом и поможет ключевое
 слово **open**. Отмечаем им нужный класс, после чего он может стать родительским.
 
-```
+```kotlin
 open class Fraction {
   ...
 }
@@ -31,7 +31,7 @@ open class Fraction {
 переопределить в дочерних классах, также должны быть отмечены ключевым словом
 **open**.
 
-```
+```kotlin
 open class Fraction {
 
   open fun toAttack() {
@@ -45,7 +45,7 @@ open class Fraction {
 переопределения таких свойств в дочерних классах, не забудьте и их отметить
 ключевым словом **open**.
 
-```
+```kotlin
 open class Fraction {
 
   open val name: String = "default"
@@ -61,7 +61,7 @@ open class Fraction {
 которые не отмечены словом **open**, то переопределяться они не будут. Но
 дочерний класс сможет к ним обращаться.
 
-```
+```kotlin
 open class Fraction {
 
   open val name: String = "default"

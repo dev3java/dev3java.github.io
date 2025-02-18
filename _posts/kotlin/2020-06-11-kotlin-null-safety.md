@@ -20,7 +20,7 @@ title: Kotlin. Null-безопасность. Операторы "?.", "!!.", "?
 значений. Это означает, что при объявлении переменной, которая может хранить
 null, нужно явно объявить ее как **nullable** при помощи символа `?`.
 
-```
+```kotlin
 val languageName: String? = null
 ```
 
@@ -37,7 +37,7 @@ val languageName: String? = null
 Оператор безопасного вызова позволяет сказать компилятору, что значением данной
 переменной может быть null и его стоит проверить перед дальнейшим использованием.
 
-```
+```kotlin
 languageName?.length
 ```
 
@@ -49,7 +49,7 @@ languageName?.length
 функцию **let**. Всё, что будет указано в функции **let** выполнится только в
 том случае, если значение переменной отлично от null.
 
-```
+```kotlin
 languageName?.let { println(it) }
 ```
 
@@ -61,7 +61,7 @@ languageName?.let { println(it) }
 компилятору, что если значение переменной - null, то ТРЕБУЮ выбросить
 **NullPointerException**.
 
-```
+```kotlin
 val languageName: String? = null
 val size = languageName!!.length
 ```
@@ -78,7 +78,7 @@ val size = languageName!!.length
 Пожалуй это самый простой способ проверки значения на null и скорее всего будет
 многим знаком.
 
-```
+```kotlin
 if(languageName != null) {
     print("Name is : $languageName")
 } else {
@@ -100,7 +100,7 @@ if(languageName != null) {
 Оператор указывается между двумя значениями. Если значение слева от оператора
 равно null, то применяется значение справа.
 
-```
+```kotlin
 val size: Int = languageName.length ?: 0
 ```
 
@@ -112,7 +112,7 @@ val size: Int = languageName.length ?: 0
 Использование данного оператора с функцией **let** может полностью заменить
 проверку с помощью оператора **if-else**.
 
-```
+```kotlin
 // с использованием if-else
 if(languageName != null) {
     print("Name is : $languageName")

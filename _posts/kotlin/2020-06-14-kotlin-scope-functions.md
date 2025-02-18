@@ -47,7 +47,7 @@ title: Kotlin. Функции области видимости (Scope Functions
 
 В библиотеке функция `let` выглядит следующим образом:
 
-```
+```kotlin
 inline fun <T, R> T.let(block: (T) -> R): R
 ```
 
@@ -56,7 +56,7 @@ inline fun <T, R> T.let(block: (T) -> R): R
 
   Например, есть код, в котором выполняется цепочка вызовов (map, filter). Результат всего этого записывается в отдельную переменную, после чего она выводится на печать.
 
-```
+```kotlin
 val numbers = mutableListOf("one", "two", "three", "four", "five")
 val resultList = numbers.map { it.length }.filter { it > 3 }
 println(resultList)
@@ -64,7 +64,7 @@ println(resultList)
 
   С помощью функции `let` можно избавиться от создания промежуточной переменной:
 
-```
+```kotlin
 val numbers = mutableListOf("one", "two", "three", "four", "five")
 numbers.map { it.length }.filter { it > 3 }.let {
     println(it)
@@ -75,7 +75,7 @@ numbers.map { it.length }.filter { it > 3 }.let {
 
   Это самый популярный способ применения `let`. Достигается при совместном использовании функции `let` и оператора безопасного вызова (`?.`).
 
-```
+```kotlin
 val str: String? = null
 
 // compilation error: значением переменной может быть null
@@ -92,7 +92,7 @@ val length = str?.let {
 
 Пример можно усложнить, добавив элвис-оператор и цикл `forEach`.
 
-```
+```kotlin
 listOf(0, 1, 2, null, 4, null, 6, 7).forEach{
     it?.let{
         println("Значение элемента = $it")
@@ -104,7 +104,7 @@ listOf(0, 1, 2, null, 4, null, 6, 7).forEach{
 
   Внутри функции мы можем обращаться к объекту при помощи ключевого слова `it`. Чтобы код стал более читабельным, можно определить новую переменную и использовать ее вместо `it`.
 
-```
+```kotlin
 val numbers = listOf("one", "two", "three", "four")
 val modifiedFirstItem = numbers.first().let { firstItem ->
     println("Первый элемент в списке: '$firstItem'")
@@ -123,7 +123,7 @@ println("Первый элемент списка после изменений:
 
 В библиотеке функция `run` выглядит следующим образом:
 
-```
+```kotlin
 // Для вызова по отношению к объекту
 inline fun <T, R> T.run(block: T.() -> R): R
 
@@ -136,7 +136,7 @@ inline fun <R> run(block: () -> R): R
 
   `run` удобно использовать, когда одновременно нужно инициализировать объект, с помощью него вычислить какое-либо значение и вернуть результат.
 
-```
+```kotlin
 class Person(var name: String, var age: Int)
 
 ...
@@ -154,7 +154,7 @@ fun main() {
 
   Многие пишут, что данный вариант на практике встречается редко. Связано это с тем, что функция вызывается в нужном месте и просто выполняет по порядку весь указанный в блоке код. Тем не менее введена она была неспроста и я нашла один из вариантов ее применения.
 
-```
+```kotlin
 val info = run {
   val name = "Adam"
   val age = 30
@@ -174,7 +174,7 @@ val info = run {
 
 В библиотеке функции `with` выглядит следующим образом:
 
-```
+```kotlin
 inline fun <T, R> with(receiver: T, block: T.() -> R): R
 ```
 
@@ -182,7 +182,7 @@ inline fun <T, R> with(receiver: T, block: T.() -> R): R
 - Вызов функций без возврата какого-либо значения.
   Такой код можно прочитать так: _с этим объектом нужно сделать следующее_.
 
-```
+```kotlin
 val numbers = mutableListOf("one", "two", "three")
 
 with(numbers) {
@@ -193,7 +193,7 @@ with(numbers) {
 
 - Ввод временных переменных или функций, которые требуются для инициализации  объекта.
 
-```
+```kotlin
 val numbers = mutableListOf("one", "two", "three")
 
 val firstAndLast = with(numbers) {
@@ -206,7 +206,7 @@ println(firstAndLast)
 
 Как можно заметить, функция `with` делает тоже самое, что и `run`. Единственное отличие - ее неудобно использовать при проверке значения на **null**.
 
-```
+```kotlin
 // with - необходимо проверять на null все свойства объекта
 val person: Person? = null
     with(person) {
@@ -235,13 +235,13 @@ val person: Person? = null
 
 В библиотеке функция `apply` выглядит следующим образом:
 
-```
+```kotlin
 inline fun T.apply(block: T.() -> Unit): T
 ```
 
 Предназначение `apply` - инициализация и настройка объекта. Функция позволяет без повтора имени объекта вызывать его функции, изменять свойства и как результат возвращает объект со всеми указанными настройками.
 
-```
+```kotlin
 data class Person(var name: String, var age: Int = 0, var city: String = "")
 
 fun main() {
@@ -262,13 +262,13 @@ fun main() {
 
 В библиотеке функция `also` выглядит следующим образом:
 
-```
+```kotlin
 inline fun <T> T.also(block: (T) -> Unit): T
 ```
 
 Когда вы видите в коде `also`, то это можно прочитать как _"а также с объектом нужно сделать следующее."_ Ведь благодаря тому, что `also` возвращаем сам объект, можно выстроить длинную цепочку вызовов, где каждый вызов добавит новый эффект.
 
-```
+```kotlin
 val name = Person().also {
     println("Текущее имя: ${it.name}")
     it.name = "ModifiedName"

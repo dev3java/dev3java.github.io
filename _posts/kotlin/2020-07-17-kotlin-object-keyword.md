@@ -26,7 +26,7 @@ title: Kotlin. Ключевое слово object.
 
 Объявляется объект при помощи ключевого слова `object`, после которого следует имя объекта.
 
-```
+```kotlin
 object SomeObject {
   ...
 }
@@ -36,7 +36,7 @@ object SomeObject {
 
 Объекты можно объявлять внутри класса. Такие объекты тоже существуют в единственном экземпляре, т.е. у любого экземпляра класса будет один и тот же экземпляр объекта.
 
-```
+```kotlin
 class Someclass {
   ...
   object SomeObject {
@@ -58,7 +58,7 @@ val someClass = SomeClass.SomeObject.create()
 
 Как упоминалось ранее, объекты можно объявлять внутри класса. При этом нет каких-либо ограничений по их количеству. Но лишь один объект можно пометить ключевым словом `companion`. Такому объекту можно не указывать имя, а к его компонентам обращаться через имя класса, в котором он находится.
 
-```
+```kotlin
 class SomeClass {
 
   companion object {
@@ -81,7 +81,7 @@ val someClass = SomeClass.create()
 
 При разработке приложений анонимный объект чаще всего используется для реализации обработчика событий (клики по компонентам экрана).
 
-```
+```kotlin
 button.setOnClickListener(object : View.OnClickListener{
   override fun onClick(v: View?) {
     ...
@@ -95,7 +95,7 @@ button.setOnClickListener(object : View.OnClickListener{
 
 Если же объекту всё таки требуется имя, то его можно сохранить в переменной.
 
-```
+```kotlin
 val listener = object : View.OnClickListener{
   override fun onClick(v: View?) { ...}
 }
@@ -103,7 +103,7 @@ val listener = object : View.OnClickListener{
 
 В объекте-выражении можно обращаться к переменным, которые находятся в той же функции, в которой был создан анонимный объект.
 
-```
+```kotlin
 fun countClicks() {
   var count = 0
 
@@ -117,7 +117,7 @@ fun countClicks() {
 
 Анонимный объект может реализовывать несколько интерфейсов, тогда они перечисляются через запятую. А может и вовсе не реализовывать ни один.
 
-```
+```kotlin
 val tree = object {
     var name = "Сосна"
     var description = "хвойное дерево с длинными иглами и округлыми шишками"
