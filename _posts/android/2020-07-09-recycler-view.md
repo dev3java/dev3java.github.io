@@ -255,7 +255,7 @@ data class Tree(
 Кликните по любому файлу правой кнопкой мыши и в появившемся контекстном меню выберите: **New > Fragment > Fragment (List)**.
 
 
-![1](/assets/img/posts/recycler-view/fragment-list.jpg)
+![1](/assets/img/posts/android/recycler-view/fragment-list.jpg)
 
 ***
 
