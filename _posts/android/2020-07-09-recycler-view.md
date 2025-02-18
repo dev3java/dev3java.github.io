@@ -598,8 +598,8 @@ override fun getItemCount(): Int = trees.size + 2
 Адаптер готов к использованию. Результат будет примерно таким:
 
 <p class="post-few-img">
-  <img src="/assets/img/posts/android-recycler-view/header.png" alt="demo header" height="550"/>
-  <img src="/assets/img/posts/android-recycler-view/footer.png" alt="demo footer" height="550"/>
+  <img src="/assets/img/posts/android/recycler-view/header.png" alt="demo header" height="550"/>
+  <img src="/assets/img/posts/android/recycler-view/footer.png" alt="demo footer" height="550"/>
 </p>
 
 
@@ -609,7 +609,7 @@ override fun getItemCount(): Int = trees.size + 2
 
 Первая появившаяся мысль - добавить на экран два `RecyclerView`. И это вполне себе работает. Но возникает ряд неудобств, одно из них - некорректная работа **overScroll**. Эффект **overScroll** визуально показывает, что вы дошли до конца или начала списка.
 
-<img src="/assets/img/posts/android-recycler-view/over-scroll.png" alt="demo over scroll" width="350"/>
+<img src="/assets/img/posts/android/recycler-view/over-scroll.png" alt="demo over scroll" width="350"/>
 
 И если на экране два `RecyclerView`, то эффект **overScroll** появляется для каждого из них. Выглядит не очень красиво. Конечно можно **overScroll** эффект отключить, но тогда появляется неуверенность: "А дошел ли я до конца списка?".
 
@@ -821,7 +821,7 @@ notifyDataSetChanged()
 
 Адаптер готов к использованию. Результат будет примерно таким:
 
-<img src="/assets/img/posts/android-recycler-view/multiple-lists.gif" alt="demo multiple lists" width="350"/>
+<img src="/assets/img/posts/android/recycler-view/multiple-lists.gif" alt="demo multiple lists" width="350"/>
 
 Необязательно делать списки динамическими, таким образом можно отображать и статические списки. И даже комбинировать с предыдущим примером - добавлять header (один или для всех списков) и footer.
 
@@ -1121,7 +1121,7 @@ recycler_view.adapter = concatAdapter
 
 Результат:
 
-<img src="/assets/img/posts/android-recycler-view/concat-adapter-header-item-footer.png" alt="demo concat adapter" height="550"/>
+<img src="/assets/img/posts/android/recycler-view/concat-adapter-header-item-footer.png" alt="demo concat adapter" height="550"/>
 
 Если же в `ConcatAdapter()` передать footer сразу после header'а
 
@@ -1132,7 +1132,7 @@ recycler_view.adapter = concatAdapter
 
 то результат будет таким:
 
-<img src="/assets/img/posts/android-recycler-view/concat-adapter-header-footer-item.png" alt="demo concat adapter" height="550"/>
+<img src="/assets/img/posts/android/recycler-view/concat-adapter-header-footer-item.png" alt="demo concat adapter" height="550"/>
 
 
 ***

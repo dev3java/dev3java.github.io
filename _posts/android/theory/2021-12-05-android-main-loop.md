@@ -29,7 +29,7 @@ title: Main Loop (Главный цикл) в Android
 
 С точки зрения системы - всё что есть у программы это просто метод `main` который она вызовет при старте и завершит процесс после его выполнения.
 
-![simple program](/assets/img/posts/android-main-loop/simple-program.png)
+![simple program](/assets/img/posts/android/main-loop/simple-program.png)
 
 В коде это выглядит примерно так - у нас есть класс и внутри него метод `main`, который и вызовется системой. В данном случае мы просто выведем **Hello World** в консоль.
 
@@ -184,7 +184,7 @@ public class MyClass {
 
 Сам по себе подход с использованием цикла называется [Event Loop][wiki-event-loop-en] (если вам больше нравится на русском - [Цикл событий][wiki-event-loop-ru]). Если же **Event Loop** обеспечивает работу главного потока - то он уже «поднялся», он не какой-то простой **Event Loop**, он - **Main Loop** (Главный цикл). По сути он является ядром всего приложения, обеспечивая его работу. Весь код выполняемый на главном потоке (Main Thread) проходит через него. Практически все приложения в которых есть UI (и не только они) используют его.
 
-![event loop](/assets/img/posts/android-main-loop/event-loop.png)
+![event loop](/assets/img/posts/android/main-loop/event-loop.png)
 
 Вариантов реализации **Main Loop** множество, но нас сейчас интересует конкретно то - как это реализовано в Android. В целом у нас получился неплохой колхозный вариант **Main Loop**, но он не дает понимания всех нюансов работы главных циклов. Поэтому давайте вернёмся к коду на котором мы остановились и добавим немного комфортной городской среды в наш колхоз.
 
@@ -216,7 +216,7 @@ class Message {
 
 Может сложиться следующая ситуация: у меня есть список из трёх сообщений, первые два должны выполняться как можно скорее, а третье… допустим через час. При этом первое сообщение добавляет ещё 10 сообщений в нашу очередь, каждое из которых должно выполняться как можно скорее. Это значит, что их надо добавить в очередь сразу после второго сообщения. Получается вставка в середину списка, а [как все знают][bigocheatsheet] у `ArrayList` с операцией вставки есть проблемы.
 
-![common-data-structure-operations](/assets/img/posts/android-main-loop/common-data-structure-operations.png)
+![common-data-structure-operations](/assets/img/posts/android/main-loop/common-data-structure-operations.png)
 
 Вставка в `ArrayList` имеет сложность **O(n)**, а значит, чем больше у нас будет сообщений в очереди, тем больше времени она будет занимать.
 
@@ -372,7 +372,7 @@ Message next() {
 
 Теперь нужно учесть, что мы можем добавить новое сообщение в середину очереди. Для этого добавим сравнение сообщений по полю `when` когда ищем последнее сообщение. То есть теперь мы ищем не просто сообщение, у которого `next` равен `null`, но так же и смотрим, чтобы у следующего сообщения значение `when` было меньше чем у нового. Ну и соответственно из-за вставки в середину нам нужно заполнить поле `next` у нового сообщения.
 
-![adding-new-message](/assets/img/posts/android-main-loop/adding-new-message.png)
+![adding-new-message](/assets/img/posts/android/main-loop/adding-new-message.png)
 
 С точки зрения кода это будет выглядеть следующим образом:
 
@@ -540,7 +540,7 @@ public static void loop() {
 7. `Looper` просто выполняет `callback` из сообщения.
 8. Обратно к пункту 2.
 
-![main-loop-scheme](/assets/img/posts/android-main-loop/main-loop-scheme.png)
+![main-loop-scheme](/assets/img/posts/android/main-loop/main-loop-scheme.png)
 
 Отлично! В итоге у нас вполне рабочий цикл событий. Даже что-то близкое к тому, как все устроено в Android, но в Android классах кода куда больше. Например, в нашем `Looper` 25 строк, а в [Android 493][android-looper], правда это с учётом JavaDoc. Всё потому, что `Looper`, `Message`, `MessageQueue` обладают в Android SDK дополнительными возможностями.
 
@@ -589,7 +589,7 @@ private static void prepare(boolean quitAllowed) {
 
 [`ThreadLocal`][java-doc-thread-local] это такое хранилище, в котором для каждого из потоков будет хранится свое значение. Допустим я из потока 1 кладу в это хранилище `true`, затем если я обращусь из этого же потока к хранилищу - я получу `true`. Но если я обращусь к этому хранилищу из другого потока, то мне вернется `null`, так как для этого потока значение еще не было записано.
 
-![thread-local](/assets/img/posts/android-main-loop/thread-local.png)
+![thread-local](/assets/img/posts/android/main-loop/thread-local.png)
 
 `Looper` использует этот механизм вкупе с приватным конструктором для того, чтобы обеспечить уникальность `Looper` для каждого из потоков. Внутри метода `prepare` с помощью `ThreadLocal` он сначала проверяет был ли уже создан `Looper` для текущего потока, если это так, то бросает исключение которое скажет о том, что негоже создавать несколько `Looper` для одного потока. Если же `Looper` для текущего потока еще не был создан, то он создает новый `Looper` и сразу же записывает его в `ThreadLocal`.
 
@@ -1006,7 +1006,7 @@ Message next() {
 
 Работает этот механизм очень просто. Для того чтобы исполнение очереди сообщений приостановилось, в очередь сообщений добавляется особо промаркированное сообщение.
 
-![queue-marked-message](/assets/img/posts/android-main-loop/queue-marked-message.png)
+![queue-marked-message](/assets/img/posts/android/main-loop/queue-marked-message.png)
 
 Далее, когда при выполнении метода `MessageQueue` `next` оно окажется следующим, то очередь сообщений остановится вместо того чтобы выполнять сообщения.
 
@@ -1104,7 +1104,7 @@ void recycleUnchecked() {
 
 Если мы захотим из кода приложения добавить новое сообщение в очередь, то мы должны делать это через `Handler`, напрямую это сделать никак не получится, так как большинство методов `MessageQueue` имеют видимость `package-local`, а не `public`.
 
-![android-handler](/assets/img/posts/android-main-loop/android-handler.png)
+![android-handler](/assets/img/posts/android/main-loop/android-handler.png)
 
 #### post и postDelayed
 
@@ -1112,11 +1112,11 @@ void recycleUnchecked() {
 
 Метод `post` просто добавляет новое сообщение в конец очереди.
 
-![android-post-delayed](/assets/img/posts/android-main-loop/android-post.png)
+![android-post-delayed](/assets/img/posts/android/main-loop/android-post.png)
 
 Метод `postDelayed`  добавляет отложенное сообщение, которое выполнится через определенный промежуток времени. Для этого в поле `when` класса `Message` записывается время с момента старта JVM + время через которое надо выполнить сообщение, таким образом `MessageQueue` понимает когда надо выполнить сообщение.
 
-![android-post-delayed](/assets/img/posts/android-main-loop/android-post-delayed.png)
+![android-post-delayed](/assets/img/posts/android/main-loop/android-post-delayed.png)
 
 Стоит заметить, что с `postDelayed` стоит быть аккуратными если вы используете их в объектах с коротким жизненным циклом. Иначе может сложиться ситуация, когда ваш объект уже готов быть собран сборщиком мусора, но сообщение, которое он отправил, ещё не успело выполниться. В случае с `post` беда не велика и я бы даже назвал это микроутечкой памяти, но в случае с `postDelayed` это уже может быть скорее миниутечка, ведь объект утечёт на тот период времени, что вы указали.
 
@@ -1139,7 +1139,7 @@ void recycleUnchecked() {
 
 В итоге у нас есть два `Looper`, а значит, нужно как-то передавать управление C++ слою. Для этого в Java слое вызывается метод `nativePollOnce`. Каждый раз когда в `MessageQueue` мы пытаемся найти следующее сообщение, сначала вызывается `nativePollOnce`. В этот момент наступает очередь `Looper` из C++ обрабатывать сообщения, и он вернёт управление в Java слой лишь тогда, когда он закончит обрабатывать все свои текущие сообщения. Важно понимать, что оба этих `Looper` работают в одном потоке — `MainThread`, то есть у нас имеется две очереди основных событий на один поток. Следовательно, если «заспамить» очередь из C++, то очередь из Java вообще не будет продвигаться. Получается следующая схема:
 
-![main-loop-scheme-with-c++](/assets/img/posts/android-main-loop/main-loop-scheme-with-c++.png)
+![main-loop-scheme-with-c++](/assets/img/posts/android/main-loop/main-loop-scheme-with-c++.png)
 
 Интересно, что с точки зрения кода `Looper` из C++ сочетает в себе и логику `Looper` и логику `MessageQueue`. Да и в целом написан не так аккуратно, как его собрат из Java слоя. При желании можете удостовериться в этом сами, посмотрев его [исходный код][android-looper-c++] с заголовочным [файлом][android-looper-c++-2]. По этой причине, код я прикладывать особо не буду, но всё же рассмотрим избранные куски.
 
@@ -1268,7 +1268,7 @@ write(mWakeEventFd.get(), &inc, sizeof(uint64_t))
 
 Общий путь ожиданий и пробуждений, включая Java слой, получается довольно длинным:
 
-![main-loop-scheme-epoll-eventfd](/assets/img/posts/android-main-loop/main-loop-scheme-epoll-eventfd.png)
+![main-loop-scheme-epoll-eventfd](/assets/img/posts/android/main-loop/main-loop-scheme-epoll-eventfd.png)
 
 С Android SDK покончено, давайте перейдём к поверхностному рассмотрению альтернативных фреймворков для разработки под Android. Рассмотрим конечно же не всё. Только то, что является достаточно популярным или обладает своими особенностями.
 
@@ -1283,7 +1283,7 @@ write(mWakeEventFd.get(), &inc, sizeof(uint64_t))
 
 Первая очередь нам уже привычна и понятна - это очередь основных событий, а вот вторая очередь уже интереснее. Она используется для очень коротких событий, которые желательно выполнить как можно скорее.
 
-![flutter-first-queue](/assets/img/posts/android-main-loop/flutter-first-queue.png)
+![flutter-first-queue](/assets/img/posts/android/main-loop/flutter-first-queue.png)
 
 С точки зрения кода это выглядит примерно так:
 
@@ -1314,7 +1314,7 @@ void loop() {
 
 Также во Flutter нет привычной системы потоков, но есть `Isolate`. Он похож на обычные потоки в других языках, но при этом `Isolate` не делят память между собой, то есть нельзя по привычной для нас схеме менять одну переменную из двух разных `Isolate`, а значит и проблем с синхронизацией по большей части нет. Интересующей же нас особенностью является то, что каждый из `Isolate` имеет свой цикл событий с собственными очередями `Event` и `MicroTask`. Общаются же `Isolate` c помощью сообщений, которые они могут посылать друг другу. Таким образом вообще все действия во Flutter выполняются в циклах событий.
 
-![flutter-two-queue](/assets/img/posts/android-main-loop/flutter-two-queue.png)
+![flutter-two-queue](/assets/img/posts/android/main-loop/flutter-two-queue.png)
 
 Подробнее про это можно прочитать в этой [статье][post-flutter-event-loop-eng] ([перевод][post-flutter-event-loop-ru]).
 
@@ -1333,13 +1333,13 @@ void loop() {
 
 Подробнее о главном цикле Chrome можно прочитать в [этой статье][chrome-main-loop]. Я же просто приведу диаграмму оттуда.
 
-![chrome-main-loop](/assets/img/posts/android-main-loop/chrome-main-loop.png)
+![chrome-main-loop](/assets/img/posts/android/main-loop/chrome-main-loop.png)
 
 То есть мы уже имеем целых три очереди на один цикл событий.
 
 Если открыть инструменты разработчика в Chrome, то мы можем увидеть прекрасную картину работы главного (и не только) потока.
 
-![chrome-tools-ex](/assets/img/posts/android-main-loop/chrome-tools-ex.png)
+![chrome-tools-ex](/assets/img/posts/android/main-loop/chrome-tools-ex.png)
 
 Сообщения из очереди `Render` здесь обозначены сиреневым цветом.
 
@@ -1413,7 +1413,7 @@ class GameLooper {
 
 Получается, что если пользователь жмёт на кнопку 3 секунды, то на медленном железе метод успеет выполниться 3 раза, а на мощном — 6. Соответственно, на мощном железе персонаж пройдет в два раза большее расстояние.
 
-![games-1](/assets/img/posts/android-main-loop/games-1.png)
+![games-1](/assets/img/posts/android/main-loop/games-1.png)
 
 В реальной же игре вообще все объекты будут двигаться в два раза быстрее. Согласитесь — такой геймплей нам не нужен.
 

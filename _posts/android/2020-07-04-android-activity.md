@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
 
 Все вышеперечисленные шаги можно сократить до одного благодаря наличию в Android Studio стандартных шаблонов: правой кнопкой мыши вызываем контекстное меню и в нём выбираем **New -> Activity -> "выбрать нужный шаблон"**.
 
-![new-activity-patterns](/assets/img/posts/android-activity/new-activity-patterns.jpg)
+![new-activity-patterns](/assets/img/posts/android/activity/new-activity-patterns.jpg)
 
 После этого класс, разметка, а также запись в манифесте будут добавлены автоматически.
 
@@ -271,7 +271,7 @@ Intent-фильтры - это выражение в файле манифест
 
 Исходя из вышеописанного можно сделать простенькую схему для лучшего понимания того, как активити переходит из одного состояния своего жизненного цикла в другое. Я делаю акцент именно на состояниях (а не на методах обратного вызова), потому что на мой взгляд это легче для восприятия (особенно новичкам).
 
-![activity-state-scheme](/assets/img/posts/android-activity/activity-state-scheme.png)
+![activity-state-scheme](/assets/img/posts/android/activity/activity-state-scheme.png)
 
 ***
 

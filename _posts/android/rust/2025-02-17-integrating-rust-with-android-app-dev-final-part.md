@@ -6,7 +6,7 @@ categories: [Android, Rust]
 tags: [android, jetpack compose, rust, kotlin, java]
 pin: false
 image:
-  path: /assets/img/posts/android-rust/rust-android-scaled.webp
+  path: /assets/img/posts/android/rust/rust-android-scaled.webp
 ---
 
 Это вторая и заключительная часть серии, в которой объясняется, 

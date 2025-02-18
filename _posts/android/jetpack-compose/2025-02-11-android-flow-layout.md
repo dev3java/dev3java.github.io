@@ -6,7 +6,7 @@ categories: [Android, Jetpack Compose]
 tags: [android, jetpack compose]
 pin: false
 image:
-  path: /assets/img/posts/android-jetpack-compose/flow-layout/flowLayout-example-cover.png
+  path: /assets/img/posts/android/jetpack-compose/flow-layout/flowLayout-example-cover.png
 ---
 
 `FlowRow` и `FlowColumn` очень просты в использовании — они являются мощным и гибким инструментом
@@ -25,7 +25,7 @@ image:
 есть чипсы (теги), которые мы размещаем в случайном порядке. Фишка `Plant-based food` не помещается
 и переносится на следующую строку.
 
-![example-1](/assets/img/posts/android-jetpack-compose/flow-layout/flowLayout-example-1.png)
+![example-1](/assets/img/posts/android/jetpack-compose/flow-layout/flowLayout-example-1.png)
 
 ```kotlin
 fun FlowRow{
@@ -38,7 +38,7 @@ fun FlowRow{
 
 `FlowColumn` может выглядеть следующим образом:
 
-![example-2](/assets/img/posts/android-jetpack-compose/flow-layout/flowLayout-example-2.png)
+![example-2](/assets/img/posts/android/jetpack-compose/flow-layout/flowLayout-example-2.png)
 
 ```kotlin
 fun FlowColumn{
@@ -72,11 +72,11 @@ fun FlowRow(
 
 `VerticalAlignment` предлагает 3 различных варианта, которые очевидны:
 
-![example-3](/assets/img/posts/android-jetpack-compose/flow-layout/flowLayout-example-3.png)
+![example-3](/assets/img/posts/android/jetpack-compose/flow-layout/flowLayout-example-3.png)
 
 `HorizontalArrangement`, с другой стороны, имеет больше возможностей работы с некоторыми неочевидными вариантами:
 
-![example-4](/assets/img/posts/android-jetpack-compose/flow-layout/flowLayout-example-4.png)
+![example-4](/assets/img/posts/android/jetpack-compose/flow-layout/flowLayout-example-4.png)
 
 Различие между `SpaceEvenly` и `SpaceAround` может быть неочевидным. Основное различие заключается в
 том, что `SpaceEvenly`, как следует из названия, обеспечивает равномерный интервал, включая начальные
@@ -90,7 +90,7 @@ fun FlowRow(
 
 `maxItemsInEachRow` можно использовать вместе с модификаторами веса, чтобы сделать что-то вроде этого:
 
-![example-5](/assets/img/posts/android-jetpack-compose/flow-layout/flowLayout-example-5.png)
+![example-5](/assets/img/posts/android/jetpack-compose/flow-layout/flowLayout-example-5.png)
 
 Вес всех кнопок установлен на 1, кроме кнопки «ноль», для которой вес установлен на 2.
 

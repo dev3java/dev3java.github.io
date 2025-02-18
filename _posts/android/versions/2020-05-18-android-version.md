@@ -19,7 +19,7 @@ title: История версий Android
 
 ***
 
-<img src="/assets/img/posts/android-version/android-a.png" alt="android-a" height="300"/>
+<img src="/assets/img/posts/android/version/android-a.png" alt="android-a" height="300"/>
 
 ## Android 1.0
 
@@ -42,7 +42,7 @@ API: 1.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-b.png" alt="android-b" height="300"/>
+<img src="/assets/img/posts/android/version/android-b.png" alt="android-b" height="300"/>
 
 ## Android 1.1
 
@@ -57,7 +57,7 @@ API: 2.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-c.png" alt="android-c" height="300"/>
+<img src="/assets/img/posts/android/version/android-c.png" alt="android-c" height="300"/>
 
 ## Android 1.5 Cupcake
 
@@ -80,7 +80,7 @@ API: 3.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-d.png" alt="android-d" height="300"/>
+<img src="/assets/img/posts/android/version/android-d.png" alt="android-d" height="300"/>
 
 ## Android 1.6 Donut
 
@@ -89,7 +89,7 @@ API: 4.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-e.png" alt="android-e" height="300"/>
+<img src="/assets/img/posts/android/version/android-e.png" alt="android-e" height="300"/>
 
 ## Android 2.0 / 2.1 Eclair
 
@@ -99,7 +99,7 @@ API: 5, 6, 7.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-f.png" alt="android-f" height="300"/>
+<img src="/assets/img/posts/android/version/android-f.png" alt="android-f" height="300"/>
 
 ## Android 2.2 Froyo
 
@@ -108,7 +108,7 @@ API: 8.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-g.png" alt="android-g" height="300"/>
+<img src="/assets/img/posts/android/version/android-g.png" alt="android-g" height="300"/>
 
 ## Android 2.3 Gingerbread
 
@@ -117,7 +117,7 @@ API: 9, 10.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-h.png" alt="android-h" height="300"/>
+<img src="/assets/img/posts/android/version/android-h.png" alt="android-h" height="300"/>
 
 ## Android 3.0 / 3.1 / 3.2 Honeycomb
 
@@ -126,7 +126,7 @@ API: 11, 12, 13.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-i.png" alt="android-i" height="300"/>
+<img src="/assets/img/posts/android/version/android-i.png" alt="android-i" height="300"/>
 
 ## Android 4.0 Ice Cream Sandwich
 
@@ -135,7 +135,7 @@ API: 14, 15.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-j.png" alt="android-j" height="300"/>
+<img src="/assets/img/posts/android/version/android-j.png" alt="android-j" height="300"/>
 
 ## Android 4.1 / 4.2 / 4.3 Jelly Bean
 
@@ -146,7 +146,7 @@ API: 16, 17, 18.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-k.png" alt="android-k" height="300"/>
+<img src="/assets/img/posts/android/version/android-k.png" alt="android-k" height="300"/>
 
 ## Android 4.4 KitKat
 
@@ -159,7 +159,7 @@ API: 19, 20.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-l.png" alt="android-l" height="300"/>
+<img src="/assets/img/posts/android/version/android-l.png" alt="android-l" height="300"/>
 
 ## Android 5.0 / 5.1 Lollipop
 
@@ -172,7 +172,7 @@ API: 21, 22.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-m.png" alt="android-m" height="300"/>
+<img src="/assets/img/posts/android/version/android-m.png" alt="android-m" height="300"/>
 
 ## Android 6.0 Marshmallow
 
@@ -181,7 +181,7 @@ API: 23.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-n.png" alt="android-n" height="300"/>
+<img src="/assets/img/posts/android/version/android-n.png" alt="android-n" height="300"/>
 
 ## Android 7.0 / 7.1 Nougat
 
@@ -190,7 +190,7 @@ API: 24, 25.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-o.png" alt="android-o" height="300"/>
+<img src="/assets/img/posts/android/version/android-o.png" alt="android-o" height="300"/>
 
 ## Android 8.0 / 8.1 Oreo
 
@@ -199,7 +199,7 @@ API: 26, 27.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-p.png" alt="android-p" height="300"/>
+<img src="/assets/img/posts/android/version/android-p.png" alt="android-p" height="300"/>
 
 ## Android 9.0 Pie
 
@@ -208,7 +208,7 @@ API: 28.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-10.png" alt="android-10" height="300"/>
+<img src="/assets/img/posts/android/version/android-10.png" alt="android-10" height="300"/>
 
 ## Android 10 Quince Tart
 
@@ -236,7 +236,7 @@ API: 28.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-11.png" alt="android-11" height="300"/>
+<img src="/assets/img/posts/android/version/android-11.png" alt="android-11" height="300"/>
 
 ## Android 11 Red Velvet Cake
 
@@ -253,7 +253,7 @@ API: 28.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-12.svg" alt="android 12 logo" height="300"/>
+<img src="/assets/img/posts/android/version/android-12.svg" alt="android 12 logo" height="300"/>
 
 ## Android 12 Snow Cone
 
@@ -278,7 +278,7 @@ API: 28.
 
 ***
 
-<img src="/assets/img/posts/android-version/android-13.png" alt="android 13 logo" height="300"/>
+<img src="/assets/img/posts/android/version/android-13.png" alt="android 13 logo" height="300"/>
 
 ## Android 13 Tiramisu
 
