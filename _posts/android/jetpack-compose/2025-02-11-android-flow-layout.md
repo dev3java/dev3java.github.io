@@ -38,7 +38,7 @@ fun FlowRow{
 
 `FlowColumn` может выглядеть следующим образом:
 
-![example-2](/assets/img/posts/aandroid-jetpack-compose/flow-layout/flowLayout-example-2.png)
+![example-2](/assets/img/posts/android-jetpack-compose/flow-layout/flowLayout-example-2.png)
 
 ```kotlin
 fun FlowColumn{
