@@ -233,11 +233,11 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-#jekyll_admin:
-#  hidden_links:
+jekyll_admin:
+  hidden_links:
 #    - posts
 #    - pages
 #    - staticfiles
 #    - datafiles
 #    - configuration
-#  homepage: "pages"
+  homepage: "posts"
