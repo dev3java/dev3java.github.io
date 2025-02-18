@@ -16,10 +16,12 @@ timezone: Europe/Moscow
 
 title: "@dev3java" # the main title
 
-tagline: База статей Android/Kotlin # it will display as the subtitle
+tagline: Posts about Android, Kotlin, Jetpack Compose, Rust, ReactiveX, Algorithm,
+  Data Structure, OOP, Collections, Git, GitFlow, Tutorials & etc... # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  База статей Android/Kotlin, основанная на личных наблюдениях,
+  База статей Android, Kotlin, Jetpack Compose, Rust, ReactiveX, Algorithm, Data Structure, OOP,
+  Collections, Git, GitFlow, Tutorials, основанная на личных наблюдениях,
   а так же интересные статьи и информация со сторонних ресурсов.
 
 # Fill in the protocol & hostname for your site.
