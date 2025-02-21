@@ -16,12 +16,12 @@ timezone: Europe/Moscow
 
 title: "@dev3java" # the main title
 
-tagline: Posts about Android, Kotlin, Jetpack Compose, Rust, ReactiveX, Algorithm,
+tagline: Posts about Android, Java, Kotlin, Jetpack Compose, Rust, ReactiveX, Algorithm,
   Data Structure, OOP, Collections, Git, GitFlow, Tutorials & etc... # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  База статей Android, Kotlin, Jetpack Compose, Rust, ReactiveX, Algorithm, Data Structure, OOP,
-  Collections, Git, GitFlow, Tutorials, основанная на личных наблюдениях,
+  База статей Android, Java, Kotlin, Jetpack Compose, Rust, ReactiveX, Algorithm, Data Structure, OOP,
+  Collections, Git, GitFlow, Tutorials и т.д. основанная на личных наблюдениях,
   а так же интересные статьи и информация со сторонних ресурсов.
 
 # Fill in the protocol & hostname for your site.
@@ -95,6 +95,9 @@ pageviews:
 #     dark — Use the dark color scheme
 #
 theme_mode: # [light | dark]
+
+# background animation switch
+bg_anim: true
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url

@@ -4,7 +4,11 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-
+<div>
+  {% if site.bg_anim %}
+    {% include_cached background-animation.html %}
+  {% endif %}
+</div>
 
 > Разрабатываю программное обеспечение. Интересуюсь мобильными платформами Android/iOS.
 > Верю, что заказчик должен быть счастливым, а код чистым.
