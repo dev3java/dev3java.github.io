@@ -1,52 +1,8 @@
+{% if site.bg_anim %}
 <div id="animation">
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
-  <div class="animation-circle"></div>
+  {% for i in (1..50) %}
+    <div class="animation-circle"></div>
+    {% comment %} <meta name="{{ tag[0] }}" content="{{ tag[1] | escape }}"> {% endcomment %}
+    {%- endfor %}
 </div>
+{% endif %}
