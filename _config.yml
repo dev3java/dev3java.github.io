@@ -20,9 +20,9 @@ tagline: Posts about Android, Java, Kotlin, Jetpack Compose, Rust, ReactiveX, Al
   Data Structure, OOP, Collections, Git, GitFlow, Tutorials & etc... # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  База статей Android, Java, Kotlin, Jetpack Compose, Rust, ReactiveX, Algorithm, Data Structure, OOP,
-  Collections, Git, GitFlow, Tutorials и т.д. основанная на личных наблюдениях,
-  а так же интересные статьи и информация со сторонних ресурсов.
+  database of articles, android, java, kotlin, jetpack compose, rust, reactiveX, algorithm, data structure, oop, collections, git, gitflow, tutorials, solid, s.o.l.i.d.,
+  .java, .kt, .rs, .saas, .css, .scss, .markdown, .md, .git,
+  база статей, андроид, джава, котлин, компоуз, раст, реактивное программирование, алгоритмы, структура данных, ООП, Коллекции, Гит, гит флоу, примеры, солид
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -103,7 +103,7 @@ bg_anim: true
 # Notice that once it is assigned, the CDN url
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
-# e.g. 'https://cdn.com'
+# e.g. 'https://cdn.com' https://cdn.jsdelivr.net/gh/dev3java/dev3java.github.io/
 cdn: "" #https://chirpy-img.netlify.app
 
 # the avatar on sidebar, support local or CORS resources
