@@ -103,8 +103,10 @@ bg_anim: true
 # Notice that once it is assigned, the CDN url
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
-# e.g. 'https://cdn.com' https://cdn.jsdelivr.net/gh/dev3java/dev3java.github.io/
-cdn: "https://d40ewjb0ea.a.trbcdn.net" #https://chirpy-img.netlify.app
+# e.g. 'https://cdn.com'
+# https://d40ewjb0ea.a.trbcdn.net
+# https://chirpy-img.netlify.app
+cdn: "https://cdn.jsdelivr.net/gh/dev3java/dev3java.github.io@main/assets/"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/assets/img/favicons/avatar.gif" #/commons/avatar.jpg
