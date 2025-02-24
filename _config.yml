@@ -106,7 +106,7 @@ bg_anim: true
 # e.g. 'https://cdn.com'
 # https://d40ewjb0ea.a.trbcdn.net
 # https://chirpy-img.netlify.app
-cdn: "https://cdn.jsdelivr.net/gh/dev3java/dev3java.github.io@main/assets/"
+cdn: "https://cdn.jsdelivr.net/gh/dev3java/dev3java.github.io"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/assets/img/favicons/avatar.gif" #/commons/avatar.jpg
