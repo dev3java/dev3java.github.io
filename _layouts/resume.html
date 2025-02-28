@@ -7,18 +7,7 @@ layout: default
       <h1 class="post-title">
         {{ page.title }}
         {% if page.resume_pdf %}
-          <a
-            {% if page.resume_pdf contains '://' %}
-              href="{{ page.resume_pdf }}"
-            {% else %}
-              href="{{ page.resume_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-          >
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
+
         {% endif %}
       </h1>
       {% if page.description %}
@@ -37,11 +26,6 @@ layout: default
           <div class="card shadow mt-3 p-3">
             <h3 id="{{data[0]}}">
               <span>{{ data[0] | capitalize }}</span>
-              {% comment %}
-                <a href="{{data[0]}}" class="anchor text-muted">
-                  <i class="fas fa-hashtag"></i>
-                </a>
-              {% endcomment %}
             </h3>
             <div>
               {% case data[0] %}
