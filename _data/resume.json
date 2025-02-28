@@ -1,0 +1,214 @@
+{
+  "basics": {
+    "name": "Andrey Permyakov",
+    "label": "Android developer",
+    "image": "",
+    "email": "test3java@gmail.com",
+    "phone": "+7 (978) 550-21-60",
+    "url": "https://dev3java.github.io/",
+    "summary": "I'm a Android - Java/Kotlin developer. I can study everything with manual.",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "AlbertEinstein",
+        "url": "https://twitter.com/AlbertEinstein"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Java developer",
+      "position": "freelance, Nizhny Novgorod",
+      "url": "https://dev3java.github.io/",
+      "startDate": "2016-05-01",
+      "endDate": "2020-02-01",
+      "summary": "I'm a software developer who is interested platforms in Java and Android. Use of libraries: On the Java platform: SWING, JavaFX, Collection, LIBGDX. Design Patterns. On the Android platform: LIBGDX, Kotlin, Android Architecture Components (Room, LiveData, LifeCycle-ViewModel, POJO, Observer, SQLite), Firebase, XML + GSON/JSON, Picasso, Glide, ButterKnife, Retrofit + RxJava2, RecyclerView + CardView + ViewHolder pattern. Patterns: MVC, MVP, MVVM.",
+      "highlights": []
+    },
+    {
+      "name": "Android developer",
+      "position": "iMarkt, Moscow",
+      "url": "https://i-markt.ru/",
+      "startDate": "2020-02-01",
+      "endDate": "2020-09-01",
+      "summary": "Development of a warehouse application on the Android platform using technologies, MVP, Java/Kotlin, Dagger 2, RxJava 2, Retrofit 2, REST API, Room, etc.",
+      "highlights": ["Transportation, Logistics, Warehousing, International Logistics Warehouse Services"]
+    },
+    {
+      "name": "Android developer",
+      "position": "Freelance, Yevpatoriya",
+      "url": "https://dev3java.bitbucket.io/",
+      "startDate": "2020-09-01",
+      "endDate": "2021-08-01",
+      "summary": "Development of application on the Android platform using technologies Android architecture components(Lifecycle, LiveData, ViewModel, Navigation, ViewBinding, WorkManager) MVP, MVVM(RoboBinding, ngAndroid, Bindroid, DataBinding), Java/Kotlin, Dagger 2/ServiceLocator/Koin, RxJava 2/Coroutines, Retrofit 2, REST API, Room; Timber, Picasso/Glide, Sketch/Figma/Zeplin, Git and etc.",
+      "highlights": []
+    },
+    {
+      "name": "Android developer",
+      "position": "Omega, Moscow",
+      "url": "https://omega-r.ru/",
+      "startDate": "2021-08-01",
+      "endDate": "2022-03-01",
+      "summary": "Work on the SberThank project in the OMNI team through the outstaff of the Omega company on sections Onboarding, Authorization Notification, Profile, Levels, SberPrime, SberClub, Coupons and etc.Stack: Clean Architecture, MVVM, kotlin, RX/rxKotlin-rxRelay-rxAndroid-rxBinding, Retrofit/API-bitrix, okhttp3, Push-Notification(FB), DeepLink(branch, appsflyer), Dagger, epoxy, timber, glide, customTabs, BottomSheet, cicerone, imagepicker, materialdatetimepicker, analytics(appmetrica/GA360), crashlytics, biometric, shimmer, mytracker, flexbox, jwtdecode, viewpager2, CalendarView, androidbootstrap, swipelayout, jakewharton, exoplayer, PhotoView, zxing and etc.",
+      "highlights": []
+    },
+    {
+      "name": "Android developer",
+      "position": "SberThank, Moscow",
+      "url": "https://spasibosberbank.ru/",
+      "startDate": "2022-03-01",
+      "endDate": "2023-03-01",
+      "summary": "Responsibilities: Work on the Sberbank project, especially in the Coupons & Promotions and OMNI teams, Onboarding, Authorization/Registration (customer and ecoClient), Home screen, Savings Club, Coupons, Gift Certificates, Banking products, Checkout(bonuses + rubles) + Merchant and Payment Gateway settings, The Order is Placed, My Orders, etc. Participation in the development of the Sber ID SDK for developers. Management of Android auxiliary devices for working in the mobile network and Promotions. Development of the application architecture and selection of technologies used. Implementation of new functionality. Conducting interviews. Mentoring. Onboarding new team members. Implementation of features by scope/decomposition according to BT/TK (assessment of the volume and timing of work and distribution of tasks within the team), custom views, fixes, code reviews of teams, legacy code refactoring, writing internal documentation, etc.; Interaction with software, BA, CA, OK, user interface/UX, DevOps, in the backend, frontend, MO; Methods: Agile, Scrum, Kanban; Libraries: Jira, Bitrix; Keywords: Clean architecture, MVVM, java/kotlin, RX(Kotlin, Relay, Android, Binding), REST modernization, API bitrix, SQLite, Room, Redis, MongoDB, okhttp3, Push Notifications(FB), DeepLink(branch, appsflyer), Dagger2, Cicerone, AESCrypt, jwtdecode, epoxy, timber, glide, custom tabs, bottom sheet, imagepicker, materialdatetimepicker, analytics (appmetrica/GA360), crashlytics, biometric, shimmer, mytracker, flexbox, viewpager2, CalendarView, androidbootstrap, swipelayout, jakewharton, exoplayer, PhotoView, zxing, etc.",
+      "highlights": ["Financial Sector - Banking"]
+    },
+    {
+      "name": "Android developer",
+      "position": "TOPAS, Nizhny Novgorod",
+      "url": "https://dev3java.bitbucket.io/",
+      "startDate": "2023-03-01",
+      "endDate": "2025-03-01",
+      "summary": "The full development cycle of the application for the technical control station. security, such as detectors, gas analyzers, etc. Stack: Jetpack Compose, coroutines + Flow, Koin, MVVM, grp, Git",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Atyrau Institute of Oil and Gas, Atyrau",
+      "location": "Kazakhstan, Atyrau",
+      "url": "",
+      "area": "Instrumentation Engineering",
+      "studyType": "link",
+      "startDate": "2014-01-01",
+      "endDate": "2016-01-01",
+      "score": "10",
+      "courses": ["Instrumentation Engineering"]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Electrical Engineering",
+      "date": "2004-01-01",
+      "issuer": "Stepnogorsk Professionally Technical college №13",
+      "url": "",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Instrumentation Engineering",
+      "date": "2016-01-01",
+      "issuer": "Atyrau Institute of Oil and Gas, Atyrau",
+      "url": "",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Java developer",
+      "date": "2016-01-01",
+      "issuer": "Nizhny Novgorod Institute of Information Technology (NIIT)",
+      "url": "https://drive.google.com/open?id=1Cp1nr_7y_WWWcaBocAg1FysaIWBLBiAm",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Java developer",
+      "date": "2017-01-01",
+      "issuer": "Computer Science Center",
+      "url": "https://drive.google.com/open?id=10GHNioM_FQPrmViNAYaI-99Byifp7lh2",
+      "icon": "fa-solid fa-clipboard-check"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Clean Architecture",
+        "Android Jetpack",
+        "Kotlin",
+        "Java",
+        "HTML",
+        "CSS",
+        "SQL",
+        "Room",
+        "Git",
+        "Linux",
+        "OOP",
+        "SOLID",
+        "REST",
+        "OkHttp",
+        "MVP",
+        "MVVM"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Russian",
+      "fluency": "Native speaker",
+      "icon": "ru"
+    },
+    {
+      "language": "English",
+      "fluency": "B2 — Intermediate-Advanced",
+      "icon": "us"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Hobbies",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["travel", "volleyball", "basketball", "cycling", "hiking"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Professor John Doe",
+      "icon": "fa-solid fa-laptop",
+      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+    },
+    {
+      "name": "Professor John Doe",
+      "icon": "fa-solid fa-thumbtack",
+      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Movie Finder",
+      "summary": "Link to my pet-project Movie Finder.",
+      "highlights": [],
+      "startDate": "2020-01-01",
+      "endDate": "2020-01-01",
+      "url": "https://drive.google.com/drive/folders/1jBk09_JE02rfC8pOfa3fDWoHcQudzcxE"
+    },
+    {
+      "name": "Puzzle of Images",
+      "summary": "Link to project Puzzle of Images.",
+      "highlights": [],
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://drive.google.com/drive/folders/1JuC-Y0gW3yfxWUGYOgu5CkgcAoHLNJVa"
+    },
+    {
+      "name": "Training",
+      "summary": "Link to project Training.",
+      "highlights": [],
+      "startDate": "2016-01-01",
+      "endDate": "2016-01-01",
+      "url": "https://drive.google.com/drive/folders/1f6aC4MHAyzd3EW0LGTOvBvumW0kEkeCC"
+    },
+    {
+      "name": "Youtube channel",
+      "summary": "My hobby is game development - Link to my Youtube channel.",
+      "highlights": [],
+      "startDate": "2014-01-01",
+      "endDate": "2014-01-01",
+      "url": "https://www.youtube.com/channel/UCUis7fy4jkUBgUBK-5sbFbg"
+    }
+  ]
+}

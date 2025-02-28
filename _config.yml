@@ -246,3 +246,21 @@ jekyll_admin:
 #    - datafiles
 #    - configuration
   homepage: "posts"
+
+# jekyll_get_json:
+#   - data: resume
+#     json: assets/json/resume.json # может быть и url
+
+jsonresume:
+  - basics
+  - work
+  - education
+  - publications
+  - projects
+  - volunteer
+  - awards
+  - certificates
+  - skills
+  - languages
+  - interests
+  - references
