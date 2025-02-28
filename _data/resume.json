@@ -82,7 +82,7 @@
     {
       "institution": "Atyrau Institute of Oil and Gas, Atyrau",
       "location": "Kazakhstan, Atyrau",
-      "url": "",
+      "url": "https://example.io/",
       "area": "Instrumentation Engineering",
       "studyType": "link",
       "startDate": "2014-01-01",
@@ -96,14 +96,14 @@
       "name": "Electrical Engineering",
       "date": "2004-01-01",
       "issuer": "Stepnogorsk Professionally Technical college №13",
-      "url": "",
+      "url": "https://example.io/",
       "icon": "fa-solid fa-clipboard-check"
     },
     {
       "name": "Instrumentation Engineering",
       "date": "2016-01-01",
       "issuer": "Atyrau Institute of Oil and Gas, Atyrau",
-      "url": "",
+      "url": "https://example.io/",
       "icon": "fa-solid fa-clipboard-check"
     },
     {
