@@ -4,7 +4,7 @@
     "label": "Android developer",
     "image": "",
     "email": "test3java@gmail.com",
-    "phone": "+7 (978) 550-21-60",
+    "phone": "+7 (978) 550-**-**",
     "url": "https://dev3java.github.io/",
     "summary": "I'm a Android - Java/Kotlin developer. I can study everything with manual.",
     "location": {
@@ -163,18 +163,6 @@
       "name": "Hobbies",
       "icon": "fa-solid fa-tag",
       "keywords": ["travel", "volleyball", "basketball", "cycling", "hiking"]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ],
   "projects": [
