@@ -255,6 +255,41 @@ td.list-group-category-icon {
   padding-right: 0.4rem;
 }
 
+tr.list-groups-category {
+  display: flex;
+}
+
+tr.list-groups-name {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  word-wrap: break-word;
+  white-space: wrap;
+  gap: 0.2rem;
+}
+
+@function random_range($min, $max) {
+  $rand: random();
+  $random_range: $min + floor($rand * (($max - $min) + 1));
+  @return $random_range;
+}
+
+.random-color {
+  background-color: var(--r-color);
+
+  @for $i from 0 through 50 {
+    &:nth-child(#{$i}) {
+      --r-color: rgba(
+        #{random_range(0, 255)},
+        #{random_range(0, 255)},
+        #{random_range(0, 255)},
+        0.12
+      );
+    }
+  }
+}
+
 td.list-group-name {
   font-size: 0.8rem;
   word-wrap: break-word;
