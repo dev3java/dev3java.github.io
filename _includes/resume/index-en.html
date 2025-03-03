@@ -1,0 +1,79 @@
+<div class="post container-resume dn" id="container-en">
+  <div class="clear"></div>
+
+  <header class="post-header">
+    <h1 class="post-title" style="margin: 0">
+      {{ page.sub_title[1] }}
+      {% if page.resume_pdf[1] %}
+        <a
+          {% if page.resume_pdf[1] contains '://' %}
+            href="{{ page.resume_pdf[1] }}"
+          {% else %}
+            href="{{ page.resume_pdf[1] | prepend: 'assets/pdf/' | relative_url }}"
+          {% endif %}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      {% endif %}
+    </h1>
+    {% if page.description[1] %}
+      <p class="post-description">{{ page.description[1] }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="cv">
+      {% for data in site.data['resume-en'] %}
+        {% if site.json_resume_en and site.json_resume_en.size > 0 %}
+          {% unless site.json_resume_en contains data[0] %}
+            {% continue %}
+          {% endunless %}
+        {% endif %}
+        {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
+        <div class="card shadow mt-3 p-3">
+          <h3 id="{{data[0]}}">
+            <span>{{ data[0] | capitalize }}</span>
+            {% comment %}
+              <a href="{{data[0]}}" class="anchor text-muted">
+                <i class="fas fa-hashtag"></i>
+              </a>
+            {% endcomment %}
+          </h3>
+          <div>
+            {% case data[0] %}
+              {% when 'basics' %}
+                {% include resume/basics.html %}
+              {% when 'education' %}
+                {% include resume/education.html %}
+              {% when 'work experience' %}
+                {% include resume/work.html %}
+              {% when 'volunteer' %}
+                {% include resume/volunteer.html %}
+              {% when 'projects' %}
+                {% include resume/projects.html %}
+              {% when 'awards' %}
+                {% include resume/awards.html %}
+              {% when 'skills' %}
+                {% include resume/skills.html %}
+              {% when 'publications' %}
+                {% include resume/publications.html %}
+              {% when 'languages' %}
+                {% include resume/languages.html %}
+              {% when 'interests' %}
+                {% include resume/interests.html %}
+              {% when 'certificates' %}
+                {% include resume/certificates.html %}
+              {% when 'references' %}
+                {% include resume/references.html %}
+              {% else %}
+
+            {% endcase %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </article>
+  <div class="clear"></div>
+</div>

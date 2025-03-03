@@ -1,0 +1,202 @@
+{
+  "основное": {
+    "имя": "Андрей Пермяков",
+    "должность": "Андроид разработчик",
+    "аватар": "",
+    "почта": "test3java@gmail.com",
+    "телефон": "+7 (978) 550-**-**",
+    "ссылка": "https://dev3java.github.io/",
+    "о себе": "Android - Java/Kotlin разработчик. Обучаюсь самостоятельно при наличии мануала.",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "Telegram",
+        "username": "@dev3java",
+        "url": "https://t.me/dev3java"
+      }
+    ]
+  },
+  "опыт работы": [
+    {
+      "name": "Java разработчик",
+      "position": "freelance, Нижний Новгород",
+      "url": "https://dev3java.github.io/",
+      "startDate": "2016-05-01",
+      "endDate": "2020-02-01",
+      "summary": "Разрабатываю программное обеспечение. Интересуюсь платформами Java и Android. <br>Использование бибилиотек: <br>На платформе Java: SWING, JavaFX, Collection, LIBGDX. <br>Шаблоны проектирования. <br>На платформе Android: LIBGDX, Kotlin, Android Architecture Components(Room, LiveData, LifeCycle-ViewModel, POJO, Observer, SQLite), Firebase, XML + GSON/JSON, Picasso, Glide, ButterKnife, Lombok, Retrofit + RxJava2, RecyclerView + CardView + паттерн ViewHolder. Паттерны: MVC, MVP, MVVM.",
+      "highlights": []
+    },
+    {
+      "name": "Андроид разработчик",
+      "position": "iMarkt, Москва",
+      "url": "https://i-markt.ru/",
+      "startDate": "2020-02-01",
+      "endDate": "2020-09-01",
+      "summary": "Разработка складского приложения на платформе Андроид по технологиям MVP, Java/Kotlin, Dagger 2, RxJava 2, Retrofit 2, REST API, Room и т.д",
+      "highlights": ["Перевозки, логистика, склад, ВЭД - Складские услуги"]
+    },
+    {
+      "name": "Андроид разработчик",
+      "position": "Freelance, Евпатория",
+      "url": "https://dev3java.bitbucket.io/",
+      "startDate": "2020-09-01",
+      "endDate": "2021-08-01",
+      "summary": "Разработка приложений на платформе Андроид по технологиям Android architecture components(Lifecycle, LiveData, ViewModel, Navigation, ViewBinding, WorkManager) MVP, MVVM(RoboBinding, ngAndroid, Bindroid, DataBinding), Java/Kotlin, Dagger 2/ServiceLocator/Koin, RxJava 2/Coroutines, Retrofit 2, REST API, Room; Timber, Picasso/Glide, Sketch/Figma/Zeplin, Git и т.д.",
+      "highlights": []
+    },
+    {
+      "name": "Андроид разработчик",
+      "position": "Omega, Москва",
+      "url": "https://omega-r.ru/",
+      "startDate": "2021-08-01",
+      "endDate": "2022-03-01",
+      "summary": "Работа на проекте СберСпасибо в команде OMNI через аутстаф компании Омега над разделами Онбординг, Авторизация, Нотификация, Профиль, Уровни, СберПрайм, СберКлуб, Купоны и др. <br>Стек: Clean Architecture, MVVM, kotlin, RX/rxKotlin-rxRelay-rxAndroid-rxBinding, Retrofit/API-bitrix, okhttp3, Push-Notification(FB), DeepLink(branch, appsflyer), Dagger, epoxy, timber, glide, customTabs, BottomSheet, cicerone, imagepicker, materialdatetimepicker, analytics(appmetrica/GA360), crashlytics, biometric, shimmer, mytracker, flexbox, jwtdecode, viewpager2, CalendarView, androidbootstrap, swipelayout, jakewharton, exoplayer, PhotoView, zxing and etc.",
+      "highlights": []
+    },
+    {
+      "name": "Андроид разработчик(Руководитель направления)",
+      "position": "СберСпасибо, Москва",
+      "url": "https://spasibosberbank.ru/",
+      "startDate": "2022-03-01",
+      "endDate": "2023-03-01",
+      "summary": "Обязанности: Работа над проектом СберСпасибо в командах Купоны & Акции и ОМНИ над разделами Онбординг, Авторизация/Регистрация(клиент СБОЛ и экоКлиент), Главный экран, СберКлуб, Купоны, Подарочные Сертификаты, Банковские продукты, Чекаут(бонусы+рубли) + настройка Мерчант и Платежный шлюз, Заказ Оформлен, Мои Заказы и т.д. <br>Участие над улучшением SDK Sber ID для разработчиков. Управление подрядчиками Android разработки в командах Купоны & Акции. Разработка архитектуры приложения и выбор используемых технологий. Внедрение нового функционала. Проведение собеседований. Менторство. Онбординг новых членов команды. Реализация фичей скоупом/декомпозицией по БТ/ТЗ(оценка объема и сроков работ и распределение задач внутри команды), кастомные вью, фиксы, код-ревю команд, рефакторинг легаси кода, написание внутренней документации и т.п; Взаимодействие с PO, BA, SA, QA, UI/UX, DevOps, Backend, Frontend, iOS; <br>Методологии: Agile, Scrum, Kanban; <br>Багтрекеры: Jira, Bitrix; <br>Стек: Clean Architecture, MVVM, java/kotlin, RX(Kotlin, Relay, Android, Binding), REST-Retrofit, API-bitrix, SQLite, Room, Redis, MongoDB, okhttp3, Push-Notification(FB), DeepLink(branch, appsflyer), Dagger2, Cicerone, AESCrypt, jwtdecode, epoxy, timber, glide, customTabs, BottomSheet, imagepicker, materialdatetimepicker, analytics(appmetrica/GA360), crashlytics, biometric, shimmer, mytracker, flexbox, viewpager2, CalendarView, androidbootstrap, swipelayout, jakewharton, exoplayer, PhotoView, zxing and etc.",
+      "highlights": ["Финансовый сектор - Банковское дело"]
+    },
+    {
+      "name": "Андроид разработчик",
+      "position": "ТОПАС, Нижний Новгород",
+      "url": "https://dev3java.bitbucket.io/",
+      "startDate": "2023-03-01",
+      "endDate": "2025-03-01",
+      "summary": "Полный цикл разработки приложения для станции управления тех. безопасности, таких как детекторы, газоанализаторы и т.п. <br>Стек: Jetpack Compose, Coroutines + Flow, Koin, MVVM, gRPC, Git",
+      "highlights": []
+    }
+  ],
+  "образование": [
+    {
+      "institution": "Атырауский институт нефти и газа, Атырау",
+      "location": "Казахстан, Атырау",
+      "url": "https://example.io/",
+      "area": "Технологический",
+      "studyType": "link",
+      "startDate": "2014-01-01",
+      "endDate": "2016-01-01",
+      "score": "10",
+      "courses": ["Информационно-измерительная техника и технологии"]
+    }
+  ],
+  "сертификаты": [
+    {
+      "name": "Электротехника",
+      "date": "2004-01-01",
+      "issuer": "Степногорский Профессиональный технический колледж №13",
+      "url": "https://example.io/",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Информационно-измерительная техника",
+      "date": "2016-01-01",
+      "issuer": "Атырауский институт нефти и газа, Атырау",
+      "url": "https://example.io/",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Java разработчик",
+      "date": "2016-01-01",
+      "issuer": "Нижегородский Институт Информационных Технологий (НИИТ)",
+      "url": "https://drive.google.com/open?id=1Cp1nr_7y_WWWcaBocAg1FysaIWBLBiAm",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Java разработчик",
+      "date": "2017-01-01",
+      "issuer": "Центр компьютерных наук",
+      "url": "https://drive.google.com/open?id=10GHNioM_FQPrmViNAYaI-99Byifp7lh2",
+      "icon": "fa-solid fa-clipboard-check"
+    }
+  ],
+  "навыки": [
+    {
+      "name": "Программирование",
+      "level": "Мастер",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Clean Architecture",
+        "Android Jetpack",
+        "Kotlin",
+        "Java",
+        "HTML",
+        "CSS",
+        "SQL",
+        "Room",
+        "Git",
+        "Linux",
+        "OOP",
+        "SOLID",
+        "REST",
+        "OkHttp",
+        "MVP",
+        "MVVM"
+      ]
+    }
+  ],
+  "языки": [
+    {
+      "language": "Русский",
+      "fluency": "Носитель языка",
+      "icon": "ru"
+    },
+    {
+      "language": "Английский",
+      "fluency": "B2 — Средний-Продвинутый",
+      "icon": "us"
+    }
+  ],
+  "интересы": [
+    {
+      "name": "Хобби",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["путешествия", "волейбол", "баскетбол", "езда на велосипеде", "походы"]
+    }
+  ],
+  "проекты": [
+    {
+      "name": "Movie Finder",
+      "summary": "Ссылка на пет-проект Movie Finder.",
+      "highlights": [],
+      "startDate": "2020-01-01",
+      "endDate": "2020-01-01",
+      "url": "https://drive.google.com/drive/folders/1jBk09_JE02rfC8pOfa3fDWoHcQudzcxE"
+    },
+    {
+      "name": "Puzzle of Images",
+      "summary": "Ссылка на проект Puzzle of Images.",
+      "highlights": [],
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://drive.google.com/drive/folders/1JuC-Y0gW3yfxWUGYOgu5CkgcAoHLNJVa"
+    },
+    {
+      "name": "Training",
+      "summary": "Ссылка на проект Training.",
+      "highlights": [],
+      "startDate": "2016-01-01",
+      "endDate": "2016-01-01",
+      "url": "https://drive.google.com/drive/folders/1f6aC4MHAyzd3EW0LGTOvBvumW0kEkeCC"
+    },
+    {
+      "name": "Youtube канал",
+      "summary": "Мое хобби разработка игр - Ссылка на канал Youtube.",
+      "highlights": [],
+      "startDate": "2014-01-01",
+      "endDate": "2014-01-01",
+      "url": "https://www.youtube.com/channel/UCUis7fy4jkUBgUBK-5sbFbg"
+    }
+  ]
+}
