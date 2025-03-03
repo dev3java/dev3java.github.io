@@ -104,6 +104,9 @@ strong {
   margin-bottom: 40px;
 
   .card {
+    // or add to index-ru-en class="card shadow"
+    margin-top: 1rem;
+    padding: 1rem;
     background-color: var(--card-bg);
     border: 1px solid var(--main-border-color);
 
