@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Andrey Permyakov",
-    "profession": "Android developer",
+    "position": "Android developer",
     "avatar": "",
     "email": "test3java@gmail.com",
     "phone": "+7 (978) 550-**-**",
     "url": "https://dev3java.github.io/",
-    "summary": "I'm a Android - Java/Kotlin developer. I can study everything with manual.",
+    "about me": "I'm a Android - Java/Kotlin developer. I can study everything with manual.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
