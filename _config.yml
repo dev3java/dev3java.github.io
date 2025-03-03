@@ -252,9 +252,9 @@ jekyll_admin:
 #   - data: resume
 #     json: assets/json/resume.json # может быть и url
 
-jsonresume:
+json_resume_en:
   - basics
-  - work
+  - work experience
   - education
   - publications
   - projects
@@ -265,3 +265,17 @@ jsonresume:
   - languages
   - interests
   - references
+
+json_resume_ru:
+  - основное
+  - опыт работы
+  - образование
+  - публикации
+  - проекты
+  - доброволец
+  - награды
+  - сертификаты
+  - навыки
+  - языки
+  - интересы
+  - рекомендации

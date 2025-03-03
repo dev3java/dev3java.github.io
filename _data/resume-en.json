@@ -1,8 +1,8 @@
 {
   "basics": {
     "name": "Andrey Permyakov",
-    "label": "Android developer",
-    "image": "",
+    "profession": "Android developer",
+    "avatar": "",
     "email": "test3java@gmail.com",
     "phone": "+7 (978) 550-**-**",
     "url": "https://dev3java.github.io/",
@@ -16,20 +16,20 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Telegram",
+        "username": "@dev3java",
+        "url": "https://t.me/dev3java"
       }
     ]
   },
-  "work": [
+  "work experience": [
     {
       "name": "Java developer",
       "position": "freelance, Nizhny Novgorod",
       "url": "https://dev3java.github.io/",
       "startDate": "2016-05-01",
       "endDate": "2020-02-01",
-      "summary": "I'm a software developer who is interested platforms in Java and Android. Use of libraries: On the Java platform: SWING, JavaFX, Collection, LIBGDX. Design Patterns. On the Android platform: LIBGDX, Kotlin, Android Architecture Components (Room, LiveData, LifeCycle-ViewModel, POJO, Observer, SQLite), Firebase, XML + GSON/JSON, Picasso, Glide, ButterKnife, Retrofit + RxJava2, RecyclerView + CardView + ViewHolder pattern. Patterns: MVC, MVP, MVVM.",
+      "summary": "I'm a software developer who is interested platforms in Java and Android. <br>Use of libraries: <br>On the Java platform: SWING, JavaFX, Collection, LIBGDX. <br>Design Patterns. <br>On the Android platform: LIBGDX, Kotlin, Android Architecture Components (Room, LiveData, LifeCycle-ViewModel, POJO, Observer, SQLite), Firebase, XML + GSON/JSON, Picasso, Glide, ButterKnife, Retrofit + RxJava2, RecyclerView + CardView + ViewHolder pattern. Patterns: MVC, MVP, MVVM.",
       "highlights": []
     },
     {
@@ -56,7 +56,7 @@
       "url": "https://omega-r.ru/",
       "startDate": "2021-08-01",
       "endDate": "2022-03-01",
-      "summary": "Work on the SberThank project in the OMNI team through the outstaff of the Omega company on sections Onboarding, Authorization Notification, Profile, Levels, SberPrime, SberClub, Coupons and etc.Stack: Clean Architecture, MVVM, kotlin, RX/rxKotlin-rxRelay-rxAndroid-rxBinding, Retrofit/API-bitrix, okhttp3, Push-Notification(FB), DeepLink(branch, appsflyer), Dagger, epoxy, timber, glide, customTabs, BottomSheet, cicerone, imagepicker, materialdatetimepicker, analytics(appmetrica/GA360), crashlytics, biometric, shimmer, mytracker, flexbox, jwtdecode, viewpager2, CalendarView, androidbootstrap, swipelayout, jakewharton, exoplayer, PhotoView, zxing and etc.",
+      "summary": "Work on the SberThank project in the OMNI team through the outstaff of the Omega company on sections Onboarding, Authorization Notification, Profile, Levels, SberPrime, SberClub, Coupons and etc.<br>Stack: Clean Architecture, MVVM, kotlin, RX/rxKotlin-rxRelay-rxAndroid-rxBinding, Retrofit/API-bitrix, okhttp3, Push-Notification(FB), DeepLink(branch, appsflyer), Dagger, epoxy, timber, glide, customTabs, BottomSheet, cicerone, imagepicker, materialdatetimepicker, analytics(appmetrica/GA360), crashlytics, biometric, shimmer, mytracker, flexbox, jwtdecode, viewpager2, CalendarView, androidbootstrap, swipelayout, jakewharton, exoplayer, PhotoView, zxing and etc.",
       "highlights": []
     },
     {
@@ -65,7 +65,7 @@
       "url": "https://spasibosberbank.ru/",
       "startDate": "2022-03-01",
       "endDate": "2023-03-01",
-      "summary": "Responsibilities: Work on the Sberbank project, especially in the Coupons & Promotions and OMNI teams, Onboarding, Authorization/Registration (customer and ecoClient), Home screen, Savings Club, Coupons, Gift Certificates, Banking products, Checkout(bonuses + rubles) + Merchant and Payment Gateway settings, The Order is Placed, My Orders, etc. Participation in the development of the Sber ID SDK for developers. Management of Android auxiliary devices for working in the mobile network and Promotions. Development of the application architecture and selection of technologies used. Implementation of new functionality. Conducting interviews. Mentoring. Onboarding new team members. Implementation of features by scope/decomposition according to BT/TK (assessment of the volume and timing of work and distribution of tasks within the team), custom views, fixes, code reviews of teams, legacy code refactoring, writing internal documentation, etc.; Interaction with software, BA, CA, OK, user interface/UX, DevOps, in the backend, frontend, MO; Methods: Agile, Scrum, Kanban; Libraries: Jira, Bitrix; Keywords: Clean architecture, MVVM, java/kotlin, RX(Kotlin, Relay, Android, Binding), REST modernization, API bitrix, SQLite, Room, Redis, MongoDB, okhttp3, Push Notifications(FB), DeepLink(branch, appsflyer), Dagger2, Cicerone, AESCrypt, jwtdecode, epoxy, timber, glide, custom tabs, bottom sheet, imagepicker, materialdatetimepicker, analytics (appmetrica/GA360), crashlytics, biometric, shimmer, mytracker, flexbox, viewpager2, CalendarView, androidbootstrap, swipelayout, jakewharton, exoplayer, PhotoView, zxing, etc.",
+      "summary": "Responsibilities: Work on the Sberbank project, especially in the Coupons & Promotions and OMNI teams, Onboarding, Authorization/Registration (customer and ecoClient), Home screen, Savings Club, Coupons, Gift Certificates, Banking products, Checkout(bonuses + rubles) + Merchant and Payment Gateway settings, The Order is Placed, My Orders, etc. Participation in the development of the Sber ID SDK for developers. <br>Management of Android auxiliary devices for working in the mobile network and Promotions. Development of the application architecture and selection of technologies used. Implementation of new functionality. Conducting interviews. Mentoring. Onboarding new team members. Implementation of features by scope/decomposition according to BT/TK (assessment of the volume and timing of work and distribution of tasks within the team), custom views, fixes, code reviews of teams, legacy code refactoring, writing internal documentation, etc.; Interaction with software, BA, CA, OK, user interface/UX, DevOps, in the backend, frontend, MO; <br>Methods: Agile, Scrum, Kanban; <br>Libraries: Jira, Bitrix; <br>Stack: Clean architecture, MVVM, java/kotlin, RX(Kotlin, Relay, Android, Binding), REST modernization, API bitrix, SQLite, Room, Redis, MongoDB, okhttp3, Push Notifications(FB), DeepLink(branch, appsflyer), Dagger2, Cicerone, AESCrypt, jwtdecode, epoxy, timber, glide, custom tabs, bottom sheet, imagepicker, materialdatetimepicker, analytics (appmetrica/GA360), crashlytics, biometric, shimmer, mytracker, flexbox, viewpager2, CalendarView, androidbootstrap, swipelayout, jakewharton, exoplayer, PhotoView, zxing, etc.",
       "highlights": ["Financial Sector - Banking"]
     },
     {
@@ -74,7 +74,7 @@
       "url": "https://dev3java.bitbucket.io/",
       "startDate": "2023-03-01",
       "endDate": "2025-03-01",
-      "summary": "The full development cycle of the application for the technical control station. security, such as detectors, gas analyzers, etc. Stack: Jetpack Compose, coroutines + Flow, Koin, MVVM, grp, Git",
+      "summary": "The full development cycle of the application for the technical control station. security, such as detectors, gas analyzers, etc. Stack: Jetpack Compose, coroutines + Flow, Koin, MVVM, gRPC, Git",
       "highlights": []
     }
   ],
@@ -83,7 +83,7 @@
       "institution": "Atyrau Institute of Oil and Gas, Atyrau",
       "location": "Kazakhstan, Atyrau",
       "url": "https://example.io/",
-      "area": "Instrumentation Engineering",
+      "area": "Technological",
       "studyType": "link",
       "startDate": "2014-01-01",
       "endDate": "2016-01-01",
