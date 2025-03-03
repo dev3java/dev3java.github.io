@@ -104,6 +104,9 @@ strong {
   margin-bottom: 40px;
 
   .card {
+    // or add to index-ru-en class="card shadow"
+    margin-top: 1rem;
+    padding: 1rem;
     background-color: var(--card-bg);
     border: 1px solid var(--main-border-color);
 
@@ -323,6 +326,10 @@ tr.list-groups-name {
   word-wrap: break-word;
   white-space: wrap;
   gap: 0.2rem;
+}
+
+.p2 {
+  padding: 0.5rem;
 }
 
 @function random_range($min, $max) {
