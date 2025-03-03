@@ -1,83 +1,22 @@
 ---
 layout: default
 ---
-{% include lang.html %}
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/lang.js"></script>
 
-{% if site.data.resume %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.sub_title }}
-        {% if page.resume_pdf %}
-          <a
-            {% if page.resume_pdf contains '://' %}
-              href="{{ page.resume_pdf }}"
-            {% else %}
-              href="{{ page.resume_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-          >
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
-    <article>
-      <div class="cv">
-        {% for data in site.data.resume %}
-          {% if site.jsonresume and site.jsonresume.size > 0 %}
-            {% unless site.jsonresume contains data[0] %}
-              {% continue %}
-            {% endunless %}
-          {% endif %}
-          {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
-          <div class="card shadow mt-3 p-3">
-            <h3 id="{{data[0]}}">
-              <span>{{ data[0] | capitalize }}</span>
-              {% comment %}
-                <a href="{{data[0]}}" class="anchor text-muted">
-                  <i class="fas fa-hashtag"></i>
-                </a>
-              {% endcomment %}
-            </h3>
-            <div>
-              {% case data[0] %}
-                {% when 'basics' %}
-                  {% include_cached resume/basics.html %}
-                {% when 'education' %}
-                  {% include_cached resume/education.html %}
-                {% when 'work' %}
-                  {% include_cached resume/work.html %}
-                {% when 'volunteer' %}
-                  {% include_cached resume/volunteer.html %}
-                {% when 'projects' %}
-                  {% include_cached resume/projects.html %}
-                {% when 'awards' %}
-                  {% include_cached resume/awards.html %}
-                {% when 'skills' %}
-                  {% include_cached resume/skills.html %}
-                {% when 'publications' %}
-                  {% include_cached resume/publications.html %}
-                {% when 'languages' %}
-                  {% include_cached resume/languages.html %}
-                {% when 'interests' %}
-                  {% include_cached resume/interests.html %}
-                {% when 'certificates' %}
-                  {% include_cached resume/certificates.html %}
-                {% when 'references' %}
-                  {% include_cached resume/references.html %}
-                {% else %}
-
-              {% endcase %}
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </article>
+{% if site.data['resume-ru'] or site.data['resume-en'] %}
+  <div class="lang-selector h5">
+    <div class="inner">
+      <a href="#" rel="en">
+        {{ page.switch_lang_title[0] }}
+        <i class="fa-solid fa-language"></i>
+      </a>
+      <a href="#" rel="ru" class="dn">
+        {{ page.switch_lang_title[1] }}
+        <i class="fa-solid fa-language "></i>
+      </a>
+    </div>
   </div>
+  {% include_cached resume/index-ru.html %}
+  {% include_cached resume/index-en.html %}
 {% endif %}
